@@ -1,0 +1,126 @@
+=== Start training seed=42 ===
+Train size: 70784, Val size: 21096
+Log file: /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/train_log_seed42.txt
+Best ckpt: /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+=== Start training seed=42 ===
+Train size: 70784, Val size: 21096
+Log file: /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/train_log_seed42.txt
+Best ckpt: /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 1] train_loss=16.857923 val_loss=3.840621 val_MAE=30.335161
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE7': 17696, 'sRE6': 17696, 'sRE22': 17696, 'sRE5': 17696}, 'user': {2: 13868, 1: 21228, 4: 21496, 5: 14192}, 'intf': {'wo': 49372, 'w': 21412}}
+=== Start training seed=42 ===
+Train size: 70784, Val size: 21096
+Log file: /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/train_log_seed42.txt
+Best ckpt: /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 1] train_loss=16.855916 val_loss=3.868177 val_MAE=30.487249
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE7': 17696, 'sRE6': 17696, 'sRE22': 17696, 'sRE5': 17696}, 'user': {2: 13868, 1: 21228, 4: 21496, 5: 14192}, 'intf': {'wo': 49372, 'w': 21412}}
+[epoch 1] ✅ New best val_loss=3.868177. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+=== Training done ===
+=== Start training seed=42 ===
+Train size: 70784, Val size: 21096
+Log file: /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/train_log_seed42.txt
+Best ckpt: /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 1] train_loss=16.828362 val_loss=3.812899 val_MAE=29.265301
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE7': 17696, 'sRE6': 17696, 'sRE22': 17696, 'sRE5': 17696}, 'user': {2: 13868, 1: 21228, 4: 21496, 5: 14192}, 'intf': {'wo': 49372, 'w': 21412}}
+[epoch 1] ✅ New best val_loss=3.812899. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 2] train_loss=3.443626 val_loss=3.071862 val_MAE=10.957952
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE22': 17696, 'sRE7': 17696, 'sRE5': 17696}, 'user': {2: 13868, 1: 21228, 4: 21496, 5: 14192}, 'intf': {'w': 21412, 'wo': 49372}}
+[epoch 2] ✅ New best val_loss=3.071862. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 3] train_loss=3.066439 val_loss=3.052035 val_MAE=10.004034
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE7': 17696, 'sRE22': 17696, 'sRE5': 17696}, 'user': {4: 21496, 5: 14192, 1: 21228, 2: 13868}, 'intf': {'wo': 49372, 'w': 21412}}
+[epoch 3] ✅ New best val_loss=3.052035. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 4] train_loss=2.978048 val_loss=2.969909 val_MAE=9.729002
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE22': 17696, 'sRE6': 17696, 'sRE7': 17696}, 'user': {4: 21496, 1: 21228, 5: 14192, 2: 13868}, 'intf': {'w': 21412, 'wo': 49372}}
+[epoch 4] ✅ New best val_loss=2.969909. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 5] train_loss=2.912644 val_loss=2.877349 val_MAE=8.836997
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE22': 17696, 'sRE7': 17696, 'sRE6': 17696}, 'user': {4: 21496, 5: 14192, 1: 21228, 2: 13868}, 'intf': {'wo': 49372, 'w': 21412}}
+[epoch 5] ✅ New best val_loss=2.877349. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 6] train_loss=2.858353 val_loss=2.877666 val_MAE=9.357208
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE5': 17696, 'sRE7': 17696, 'sRE22': 17696}, 'user': {4: 21496, 2: 13868, 1: 21228, 5: 14192}, 'intf': {'w': 21412, 'wo': 49372}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 7] train_loss=2.829655 val_loss=3.335840 val_MAE=13.511839
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE7': 17696, 'sRE22': 17696, 'sRE6': 17696, 'sRE5': 17696}, 'user': {2: 13868, 4: 21496, 1: 21228, 5: 14192}, 'intf': {'w': 21412, 'wo': 49372}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 8] train_loss=2.792911 val_loss=2.993601 val_MAE=9.989091
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE22': 17696, 'sRE6': 17696, 'sRE7': 17696}, 'user': {5: 14192, 1: 21228, 4: 21496, 2: 13868}, 'intf': {'wo': 49372, 'w': 21412}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 9] train_loss=2.758155 val_loss=2.803198 val_MAE=8.266298
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE22': 17696, 'sRE6': 17696, 'sRE7': 17696}, 'user': {4: 21496, 1: 21228, 2: 13868, 5: 14192}, 'intf': {'w': 21412, 'wo': 49372}}
+[epoch 9] ✅ New best val_loss=2.803198. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 10] train_loss=2.725173 val_loss=3.008471 val_MAE=10.352465
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE22': 17696, 'sRE6': 17696, 'sRE7': 17696}, 'user': {5: 14192, 4: 21496, 1: 21228, 2: 13868}, 'intf': {'wo': 49372, 'w': 21412}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 11] train_loss=2.699678 val_loss=2.769950 val_MAE=8.238946
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE22': 17696, 'sRE6': 17696, 'sRE7': 17696}, 'user': {1: 21228, 4: 21496, 2: 13868, 5: 14192}, 'intf': {'w': 21412, 'wo': 49372}}
+[epoch 11] ✅ New best val_loss=2.769950. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 12] train_loss=2.674071 val_loss=2.732967 val_MAE=8.117966
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE22': 17696, 'sRE5': 17696, 'sRE7': 17696, 'sRE6': 17696}, 'user': {4: 21496, 1: 21228, 5: 14192, 2: 13868}, 'intf': {'wo': 49372, 'w': 21412}}
+[epoch 12] ✅ New best val_loss=2.732967. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 13] train_loss=2.650590 val_loss=2.740247 val_MAE=7.900669
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE5': 17696, 'sRE22': 17696, 'sRE7': 17696}, 'user': {5: 14192, 1: 21228, 4: 21496, 2: 13868}, 'intf': {'wo': 49372, 'w': 21412}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 14] train_loss=2.618432 val_loss=2.751650 val_MAE=7.558589
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE22': 17696, 'sRE5': 17696, 'sRE7': 17696, 'sRE6': 17696}, 'user': {4: 21496, 2: 13868, 1: 21228, 5: 14192}, 'intf': {'w': 21412, 'wo': 49372}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 15] train_loss=2.592524 val_loss=2.757964 val_MAE=7.732024
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE22': 17696, 'sRE7': 17696, 'sRE6': 17696}, 'user': {4: 21496, 1: 21228, 2: 13868, 5: 14192}, 'intf': {'w': 21412, 'wo': 49372}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 16] train_loss=2.567869 val_loss=2.676694 val_MAE=7.205636
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE7': 17696, 'sRE22': 17696, 'sRE6': 17696}, 'user': {2: 13868, 5: 14192, 1: 21228, 4: 21496}, 'intf': {'wo': 49372, 'w': 21412}}
+[epoch 16] ✅ New best val_loss=2.676694. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 17] train_loss=2.539634 val_loss=2.656417 val_MAE=7.125985
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE22': 17696, 'sRE6': 17696, 'sRE5': 17696, 'sRE7': 17696}, 'user': {2: 13868, 1: 21228, 4: 21496, 5: 14192}, 'intf': {'w': 21412, 'wo': 49372}}
+[epoch 17] ✅ New best val_loss=2.656417. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 18] train_loss=2.520054 val_loss=2.722324 val_MAE=7.541114
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE22': 17696, 'sRE7': 17696, 'sRE5': 17696, 'sRE6': 17696}, 'user': {5: 14192, 4: 21496, 1: 21228, 2: 13868}, 'intf': {'wo': 49372, 'w': 21412}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 19] train_loss=2.492529 val_loss=2.697807 val_MAE=7.161137
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE5': 17696, 'sRE7': 17696, 'sRE22': 17696}, 'user': {2: 13868, 1: 21228, 5: 14192, 4: 21496}, 'intf': {'w': 21412, 'wo': 49372}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 20] train_loss=2.476989 val_loss=2.688027 val_MAE=6.938559
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE22': 17696, 'sRE7': 17696, 'sRE5': 17696, 'sRE6': 17696}, 'user': {1: 21228, 4: 21496, 2: 13868, 5: 14192}, 'intf': {'w': 21412, 'wo': 49372}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 21] train_loss=2.447363 val_loss=2.673945 val_MAE=6.824630
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE22': 17696, 'sRE7': 17696, 'sRE6': 17696}, 'user': {5: 14192, 4: 21496, 2: 13868, 1: 21228}, 'intf': {'wo': 49372, 'w': 21412}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 22] train_loss=2.430488 val_loss=2.655186 val_MAE=6.797704
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE22': 17696, 'sRE7': 17696, 'sRE6': 17696}, 'user': {4: 21496, 2: 13868, 1: 21228, 5: 14192}, 'intf': {'wo': 49372, 'w': 21412}}
+[epoch 22] ✅ New best val_loss=2.655186. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/rloc_seed42.pt
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 23] train_loss=2.403802 val_loss=2.749236 val_MAE=6.848373
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE7': 17696, 'sRE6': 17696, 'sRE22': 17696, 'sRE5': 17696}, 'user': {1: 21228, 4: 21496, 5: 14192, 2: 13868}, 'intf': {'w': 21412, 'wo': 49372}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 24] train_loss=2.388498 val_loss=2.704331 val_MAE=6.718201
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE7': 17696, 'sRE5': 17696, 'sRE22': 17696}, 'user': {1: 21228, 2: 13868, 5: 14192, 4: 21496}, 'intf': {'w': 21412, 'wo': 49372}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 25] train_loss=2.374776 val_loss=2.713702 val_MAE=6.723217
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE22': 17696, 'sRE7': 17696, 'sRE5': 17696}, 'user': {5: 14192, 4: 21496, 2: 13868, 1: 21228}, 'intf': {'wo': 49372, 'w': 21412}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 26] train_loss=2.355044 val_loss=2.701960 val_MAE=6.684023
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE5': 17696, 'sRE22': 17696, 'sRE7': 17696}, 'user': {5: 14192, 1: 21228, 2: 13868, 4: 21496}, 'intf': {'wo': 49372, 'w': 21412}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 27] train_loss=2.342744 val_loss=2.706022 val_MAE=6.722569
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE7': 17696, 'sRE5': 17696, 'sRE6': 17696, 'sRE22': 17696}, 'user': {1: 21228, 4: 21496, 2: 13868, 5: 14192}, 'intf': {'wo': 49372, 'w': 21412}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 28] train_loss=2.335406 val_loss=2.723881 val_MAE=6.695625
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE7': 17696, 'sRE22': 17696, 'sRE5': 17696}, 'user': {1: 21228, 4: 21496, 5: 14192, 2: 13868}, 'intf': {'wo': 49372, 'w': 21412}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 29] train_loss=2.330929 val_loss=2.744496 val_MAE=6.689356
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE5': 17696, 'sRE22': 17696, 'sRE6': 17696, 'sRE7': 17696}, 'user': {4: 21496, 2: 13868, 5: 14192, 1: 21228}, 'intf': {'w': 21412, 'wo': 49372}}
+[VAL meta] {'room': {'Con': 21096}, 'ap': {'sRE22': 5274, 'sRE5': 5274, 'sRE6': 5274, 'sRE7': 5274}, 'user': {3: 21096}, 'intf': {'w': 7056, 'wo': 14040}}
+[epoch 30] train_loss=2.326625 val_loss=2.734113 val_MAE=6.667751
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE7': 17696, 'sRE22': 17696, 'sRE5': 17696}, 'user': {2: 13868, 1: 21228, 5: 14192, 4: 21496}, 'intf': {'w': 21412, 'wo': 49372}}
+=== Training done ===
