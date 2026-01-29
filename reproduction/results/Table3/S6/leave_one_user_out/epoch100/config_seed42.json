@@ -1,5 +1,5 @@
 {
-  "data_root": "/home/haotian/ADL_Detection_mengjing/RLoc/dataset/human_held_device_wifi_indoor_localization_dataset-main/Lounge",
+  "data_root": "/home/haotian/RLoc/dataset/human_held_device_wifi_indoor_localization_dataset-main/Lounge",
   "seed": 42,
   "gA": 64,
   "gD": 64,

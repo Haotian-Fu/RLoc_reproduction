@@ -1,0 +1,16 @@
+{
+  "data_root": "/home/haotian/RLoc/dataset/human_held_device_wifi_indoor_localization_dataset-main/Conference",
+  "seed": 3,
+  "gA": 64,
+  "gD": 64,
+  "angle_unit": "deg",
+  "batch_size": 128,
+  "lr": 0.001,
+  "epochs": 1,
+  "num_workers": 2,
+  "device": "cuda:0",
+  "debug_meta": true,
+  "include_rssi_agc": false,
+  "split_strategy": "leave_one_user_out",
+  "held_out_user": 3
+}

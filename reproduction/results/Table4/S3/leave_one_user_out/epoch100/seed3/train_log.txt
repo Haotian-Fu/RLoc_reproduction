@@ -1,0 +1,13 @@
+=== Start training seed=3 ===
+Train size: 70784, Val size: 21096
+Log file: /home/haotian/RLoc/reproduction/results/Table4/S3/leave_one_user_out/epoch100/seed3/train_log.txt
+Best ckpt: /home/haotian/RLoc/reproduction/results/Table4/S3/leave_one_user_out/epoch100/seed3/rloc_seed3.pt
+[VAL] loss=3.892435  MAE=25.995  RMSE=32.933  abs_err(p50/p90/p99)=21.568/56.628/75.983
+[VAL][mu] mean=3.718, std=7.538, min=-7.519, max=16.931, p50=1.554, p90=14.395, p99=16.056
+[VAL][sigma] mean=24.638, std=10.099, min=8.459, max=78.862, p50=22.981, p90=38.095, p99=55.443
+[VAL][baseline 2D-FFT] n_valid=20992/20992  MAE=18.940  RMSE=32.180  abs_err(p50/p90/p99)=9.417/53.430/133.266
+[VAL meta] {'room': {'Con': 20992}, 'ap': {'sRE7': 5240, 'sRE6': 5250, 'sRE22': 5256, 'sRE5': 5246}, 'user': {3: 20992}, 'intf': {'w': 7028, 'wo': 13964}}
+[epoch 1] train_loss=13.133589 val_loss=3.892435 val_MAE=25.995 val_RMSE=32.933 mu_mean=3.718 sigma_mean=24.638 sigma_p90=38.095 baseline_MAE=18.940
+[epoch 1] ✅ New best val_loss=3.892435. Saved to /home/haotian/RLoc/reproduction/results/Table4/S3/leave_one_user_out/epoch100/seed3/rloc_seed3.pt
+[TRAIN meta] {'room': {'Con': 70784}, 'ap': {'sRE6': 17696, 'sRE5': 17696, 'sRE7': 17696, 'sRE22': 17696}, 'user': {1: 21228, 4: 21496, 2: 13868, 5: 14192}, 'intf': {'wo': 49372, 'w': 21412}}
+=== Training done ===

@@ -65,7 +65,6 @@ def eval_epoch(model, loader, device, log=None, debug_meta=False):
     # accumulate for diagnostics
     all_abs_err = []
     all_sq_err = []
-    all_sigma = []
 
     base_abs_err = []
     base_sq_err = []
@@ -91,9 +90,9 @@ def eval_epoch(model, loader, device, log=None, debug_meta=False):
         # total_mae += mae.item() * bs
         n += bs
         
-        # ----- (1) sigma stats -----
-        sigma = torch.exp(0.5 * logvar)  # (B,)
-        all_sigma.append(sigma.detach().cpu())
+        # # ----- (1) sigma stats -----
+        # sigma = torch.exp(0.5 * logvar)  # (B,)
+        # all_sigma.append(sigma.detach().cpu())
 
         # ----- (2) model error stats -----
         err = (y - mu)
@@ -233,7 +232,7 @@ def train_one_model(
     include_rssi_agc=False
 ):
     os.makedirs(output_dir, exist_ok=True)
-    log_path = os.path.join(output_dir, f"train_log_seed{seed}.txt")
+    log_path = os.path.join(output_dir, f"train_log.txt")
     log = make_logger(log_path)
 
     # 建议把本次训练 config 也写下来，方便复现
@@ -243,7 +242,7 @@ def train_one_model(
         device=device, debug_meta=debug_meta, include_rssi_agc=include_rssi_agc,
         split_strategy="leave_one_user_out", held_out_user=3,
     )
-    with open(os.path.join(output_dir, f"config_seed{seed}.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(output_dir, f"config.json"), "w", encoding="utf-8") as f:
         json.dump(cfg, f, indent=2)
     set_seed(seed)
 
@@ -255,10 +254,18 @@ def train_one_model(
                             held_out_user=3)
 
 
-    train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True,
-                              num_workers=num_workers, pin_memory=True, drop_last=True)
-    val_loader   = DataLoader(val_set, batch_size=batch_size, shuffle=False,
-                              num_workers=num_workers, pin_memory=True)
+    train_loader = DataLoader(
+        train_set, batch_size=batch_size, shuffle=True,
+        num_workers=num_workers, pin_memory=True, drop_last=True,
+        persistent_workers=(num_workers > 0),
+        prefetch_factor=2 if num_workers > 0 else None,
+    )
+    val_loader   = DataLoader(
+        val_set, batch_size=batch_size, shuffle=True,
+        num_workers=num_workers, pin_memory=True, drop_last=True,
+        persistent_workers=(num_workers > 0),
+        prefetch_factor=2 if num_workers > 0 else None,
+    )
 
     in_ch = 5 if include_rssi_agc else 3
     model = RLocUNetGaussian(in_ch=in_ch, base=64, dropout=0.1).to(device)
@@ -362,17 +369,13 @@ def ensemble_predict(models, x):
     var_hat = epistemic + aleatoric
     return mu_hat, var_hat
 
-def train_deep_ensemble(
-    data_root,
-    output_dir,
-    seeds=(0,1,2,3,4),
-    **kwargs
-):
+def train_deep_ensemble(data_root, output_dir, seeds=(0,1,2,3,4), **kwargs):
     paths = []
     for s in seeds:
+        seed_dir = os.path.join(output_dir, f"seed{s}")
         p = train_one_model(
             data_root=data_root,
-            output_dir=output_dir,
+            output_dir=seed_dir,
             seed=s,
             **kwargs
         )
@@ -381,27 +384,69 @@ def train_deep_ensemble(
 
 if __name__ == "__main__":
     # ====== YOU CHANGE THESE ======
-    DATA_ROOT = "/home/haotian/ADL_Detection_mengjing/RLoc/dataset/human_held_device_wifi_indoor_localization_dataset-main/Lounge"
-    OUTPUT_DIR = "/home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100"
+    DATA_ROOT = "/home/haotian/RLoc/dataset/human_held_device_wifi_indoor_localization_dataset-main/Lounge"
+    OUTPUT_DIR = "/home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100"
     SEED = 42
     # ==============================
 
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    import argparse
 
-    # single model
-    best = train_one_model(
-        data_root=DATA_ROOT,
-        output_dir=OUTPUT_DIR,
-        seed=SEED,
-        epochs=100,
-        batch_size=128,
-        lr=1e-3,
-        device=device,
-        angle_unit="deg",
-    )
-    print("Saved:", best)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data_root", type=str, required=True)
+    parser.add_argument("--output_dir", type=str, required=True)
+    parser.add_argument("--gpu", type=int, default=0, help="GPU id, e.g., 0/1/2/3")
+    parser.add_argument("--seed", type=int, default=None, help="single seed")
+    parser.add_argument("--seeds", type=str, default=None, help="comma list, e.g. 0,1,2,3,4")
+    parser.add_argument("--epochs", type=int, default=10)
+    parser.add_argument("--batch_size", type=int, default=128)
+    parser.add_argument("--lr", type=float, default=1e-3)
+    parser.add_argument("--num_workers", type=int, default=2)
+    parser.add_argument("--include_rssi_agc", action="store_true")
+    args = parser.parse_args()
 
-    # deep ensemble (optional)
-    # paths = train_deep_ensemble(DATA_ROOT, OUTPUT_DIR, seeds=(0,1,2,3,4),
-    #                             epochs=30, batch_size=128, lr=1e-3, device=device)
-    # print("Ensemble saved:", paths)
+    if torch.cuda.is_available():
+        device = f"cuda:{args.gpu}"
+        torch.cuda.set_device(args.gpu)
+    else:
+        device = "cpu"
+
+    # decide seeds
+    if args.seeds is not None:
+        seeds = tuple(int(x) for x in args.seeds.split(",") if x.strip() != "")
+    elif args.seed is not None:
+        seeds = (int(args.seed),)
+    else:
+        raise ValueError("Please set --seed or --seeds")
+
+    # 如果你在“每卡一个seed并行”，通常每个进程只传一个 seed
+    # 但这里也允许一个进程顺序跑多个 seed（不并行）
+    if len(seeds) == 1:
+        s = seeds[0]
+        seed_dir = os.path.join(args.output_dir, f"seed{s}")
+        best = train_one_model(
+            data_root=args.data_root,
+            output_dir=seed_dir,
+            seed=s,
+            epochs=args.epochs,
+            batch_size=args.batch_size,
+            lr=args.lr,
+            num_workers=args.num_workers,
+            device=device,
+            angle_unit="deg",
+            include_rssi_agc=args.include_rssi_agc,
+        )
+        print("Saved:", best)
+    else:
+        paths = train_deep_ensemble(
+            args.data_root,
+            args.output_dir,
+            seeds=seeds,
+            epochs=args.epochs,
+            batch_size=args.batch_size,
+            lr=args.lr,
+            num_workers=args.num_workers,
+            device=device,
+            angle_unit="deg",
+            include_rssi_agc=args.include_rssi_agc,
+        )
+        print("Ensemble saved:", paths)

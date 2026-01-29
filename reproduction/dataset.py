@@ -314,13 +314,24 @@ class HWILDDataset(Dataset):
             elif est.size > 0:
                 # fallback if only one value
                 est_i = float(est[0])
+                
+        pos_x = np.nan
+        pos_y = np.nan
+        if "uwb_coordinate_x" in md:
+            xarr = _safe_squeeze(md["uwb_coordinate_x"]).reshape(-1)
+            if xarr.size > idx:
+                pos_x = float(xarr[idx])
+        if "uwb_coordinate_y" in md:
+            yarr = _safe_squeeze(md["uwb_coordinate_y"]).reshape(-1)
+            if yarr.size > idx:
+                pos_y = float(yarr[idx])
 
-        return csi_i, y_i, est_i, rssi_i, agc_i
+        return csi_i, y_i, est_i, rssi_i, agc_i, pos_x, pos_y
 
     def __getitem__(self, i):
-        mat_path, idx, meta = self.index[i]
+        mat_path, idx, meta0 = self.index[i]
         md = self._load_file(mat_path)
-        csi_i, y_i, est_i, rssi_i, agc_i = self._get_packet(md, idx)
+        csi_i, y_i, est_i, rssi_i, agc_i, pos_x, pos_y = self._get_packet(md, idx)
 
         # Build complex AoA-ToF map + beamwidth
         X, beamwidth = build_aoa_tof_map_from_csi(csi_i, gA=self.gA, gD=self.gD)
@@ -362,6 +373,14 @@ class HWILDDataset(Dataset):
         else:
             base = np.float32(est_i if self.angle_unit == "deg" else np.deg2rad(est_i))
             
+            
+        meta = dict(meta0)  # 复制一份，避免引用复用导致潜在问题
+        meta["pos_x"] = float(pos_x)
+        meta["pos_y"] = float(pos_y)
+        meta["file"] = os.path.basename(mat_path)
+        meta["mat_path"] = os.path.relpath(mat_path, self.data_root)
+        meta["pkt_idx"] = int(idx)
+
         # Also return meta if you want debugging / analysis
         return torch.from_numpy(inp), torch.tensor(target, dtype=torch.float32), torch.tensor(base), meta
 

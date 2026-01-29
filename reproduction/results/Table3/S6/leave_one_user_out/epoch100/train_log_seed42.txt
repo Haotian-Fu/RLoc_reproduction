@@ -1,0 +1,930 @@
+=== Start training seed=42 ===
+Train size: 148680, Val size: 21536
+Log file: /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/train_log_seed42.txt
+Best ckpt: /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[VAL] loss=3.163636  MAE=12.616  RMSE=20.582  abs_err(p50/p90/p99)=7.103/31.101/84.222
+[VAL][mu] mean=-10.272, std=24.707, min=-55.387, max=40.315, p50=-11.967, p90=26.043, p99=36.296
+[VAL][sigma] mean=17.625, std=13.398, min=6.015, max=104.087, p50=12.216, p90=34.357, p99=71.725
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 1] train_loss=11.121499 val_loss=3.163636 val_MAE=12.616 val_RMSE=20.582 mu_mean=-10.272 sigma_mean=17.625 sigma_p90=34.357 baseline_MAE=17.813
+[epoch 1] ✅ New best val_loss=3.163636. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37152, 'sRE4': 37150, 'sRE5': 37155, 'sRE7': 37151}, 'user': {6: 21463, 7: 21579, 1: 21076, 8: 21487, 4: 20619, 5: 21511, 2: 20873}, 'intf': {'w': 78046, 'wo': 70562}}
+[VAL] loss=3.976629  MAE=18.308  RMSE=30.818  abs_err(p50/p90/p99)=10.396/41.566/130.294
+[VAL][mu] mean=4.978, std=27.531, min=-63.001, max=69.878, p50=4.648, p90=44.404, p99=57.773
+[VAL][sigma] mean=13.456, std=9.434, min=5.183, max=81.441, p50=10.074, p90=24.914, p99=53.563
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 2] train_loss=3.276279 val_loss=3.976629 val_MAE=18.308 val_RMSE=30.818 mu_mean=4.978 sigma_mean=13.456 sigma_p90=24.914 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37153, 'sRE5': 37152, 'sRE7': 37149, 'sRE4': 37154}, 'user': {5: 21518, 7: 21581, 2: 20871, 8: 21482, 4: 20614, 1: 21075, 6: 21467}, 'intf': {'wo': 70560, 'w': 78048}}
+[VAL] loss=3.156278  MAE=12.214  RMSE=18.573  abs_err(p50/p90/p99)=8.196/26.508/72.582
+[VAL][mu] mean=-3.012, std=26.568, min=-65.487, max=72.678, p50=-4.356, p90=33.191, p99=59.093
+[VAL][sigma] mean=15.279, std=8.551, min=6.368, max=85.741, p50=12.347, p90=26.295, p99=47.943
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 3] train_loss=3.193406 val_loss=3.156278 val_MAE=12.214 val_RMSE=18.573 mu_mean=-3.012 sigma_mean=15.279 sigma_p90=26.295 baseline_MAE=17.813
+[epoch 3] ✅ New best val_loss=3.156278. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37152, 'sRE6': 37156, 'sRE7': 37144, 'sRE4': 37156}, 'user': {5: 21513, 4: 20611, 1: 21079, 7: 21585, 2: 20871, 6: 21461, 8: 21488}, 'intf': {'w': 78042, 'wo': 70566}}
+[VAL] loss=3.049422  MAE=9.921  RMSE=16.221  abs_err(p50/p90/p99)=6.372/20.895/68.687
+[VAL][mu] mean=-10.339, std=34.739, min=-80.102, max=78.291, p50=-11.726, p90=37.903, p99=69.076
+[VAL][sigma] mean=18.245, std=11.842, min=6.127, max=109.468, p50=14.048, p90=33.955, p99=64.639
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 4] train_loss=3.157770 val_loss=3.049422 val_MAE=9.921 val_RMSE=16.221 mu_mean=-10.339 sigma_mean=18.245 sigma_p90=33.955 baseline_MAE=17.813
+[epoch 4] ✅ New best val_loss=3.049422. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37156, 'sRE4': 37156, 'sRE6': 37147, 'sRE5': 37149}, 'user': {7: 21585, 2: 20868, 6: 21469, 1: 21073, 5: 21513, 8: 21485, 4: 20615}, 'intf': {'wo': 70566, 'w': 78042}}
+[VAL] loss=3.103471  MAE=11.602  RMSE=19.276  abs_err(p50/p90/p99)=7.447/23.313/86.749
+[VAL][mu] mean=-16.346, std=32.098, min=-82.662, max=80.303, p50=-18.601, p90=24.394, p99=63.658
+[VAL][sigma] mean=17.421, std=11.231, min=6.778, max=120.178, p50=13.694, p90=29.923, p99=62.522
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 5] train_loss=3.132644 val_loss=3.103471 val_MAE=11.602 val_RMSE=19.276 mu_mean=-16.346 sigma_mean=17.421 sigma_p90=29.923 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37147, 'sRE6': 37154, 'sRE7': 37151, 'sRE5': 37156}, 'user': {7: 21577, 5: 21514, 6: 21466, 4: 20617, 8: 21482, 1: 21081, 2: 20871}, 'intf': {'wo': 70566, 'w': 78042}}
+[VAL] loss=2.989800  MAE=9.424  RMSE=15.788  abs_err(p50/p90/p99)=5.778/20.127/66.202
+[VAL][mu] mean=-7.309, std=33.215, min=-79.064, max=83.200, p50=-9.274, p90=36.699, p99=69.509
+[VAL][sigma] mean=15.194, std=9.539, min=5.879, max=100.237, p50=12.025, p90=26.801, p99=52.137
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 6] train_loss=3.108291 val_loss=2.989800 val_MAE=9.424 val_RMSE=15.788 mu_mean=-7.309 sigma_mean=15.194 sigma_p90=26.801 baseline_MAE=17.813
+[epoch 6] ✅ New best val_loss=2.989800. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37155, 'sRE4': 37150, 'sRE5': 37149, 'sRE6': 37154}, 'user': {6: 21466, 7: 21579, 1: 21076, 8: 21483, 5: 21515, 4: 20619, 2: 20870}, 'intf': {'w': 78046, 'wo': 70562}}
+[VAL] loss=2.956128  MAE=9.837  RMSE=16.932  abs_err(p50/p90/p99)=5.812/20.832/75.982
+[VAL][mu] mean=-12.020, std=30.801, min=-77.441, max=75.599, p50=-13.324, p90=26.382, p99=62.921
+[VAL][sigma] mean=14.136, std=9.058, min=5.506, max=103.348, p50=11.065, p90=24.428, p99=50.386
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 7] train_loss=3.085267 val_loss=2.956128 val_MAE=9.837 val_RMSE=16.932 mu_mean=-12.020 sigma_mean=14.136 sigma_p90=24.428 baseline_MAE=17.813
+[epoch 7] ✅ New best val_loss=2.956128. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37145, 'sRE4': 37159, 'sRE5': 37151, 'sRE6': 37153}, 'user': {1: 21080, 4: 20609, 6: 21461, 5: 21516, 7: 21585, 2: 20872, 8: 21485}, 'intf': {'w': 78040, 'wo': 70568}}
+[VAL] loss=2.917108  MAE=9.102  RMSE=15.176  abs_err(p50/p90/p99)=5.783/19.058/64.704
+[VAL][mu] mean=-11.010, std=33.689, min=-78.385, max=84.549, p50=-14.318, p90=35.453, p99=71.795
+[VAL][sigma] mean=12.238, std=6.472, min=5.194, max=63.842, p50=10.102, p90=19.333, p99=38.289
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 8] train_loss=3.055377 val_loss=2.917108 val_MAE=9.102 val_RMSE=15.176 mu_mean=-11.010 sigma_mean=12.238 sigma_p90=19.333 baseline_MAE=17.813
+[epoch 8] ✅ New best val_loss=2.917108. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37150, 'sRE5': 37153, 'sRE6': 37148, 'sRE4': 37157}, 'user': {5: 21511, 7: 21576, 6: 21470, 1: 21081, 4: 20613, 2: 20873, 8: 21484}, 'intf': {'w': 78040, 'wo': 70568}}
+[VAL] loss=3.052696  MAE=10.550  RMSE=17.503  abs_err(p50/p90/p99)=6.706/21.499/74.139
+[VAL][mu] mean=-3.020, std=31.916, min=-72.866, max=79.658, p50=-4.977, p90=41.967, p99=70.181
+[VAL][sigma] mean=12.350, std=8.316, min=4.937, max=87.554, p50=9.547, p90=19.946, p99=48.742
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 9] train_loss=3.042870 val_loss=3.052696 val_MAE=10.550 val_RMSE=17.503 mu_mean=-3.020 sigma_mean=12.350 sigma_p90=19.946 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37153, 'sRE7': 37156, 'sRE5': 37152, 'sRE6': 37147}, 'user': {8: 21488, 6: 21469, 7: 21580, 2: 20866, 4: 20616, 5: 21511, 1: 21078}, 'intf': {'w': 78054, 'wo': 70554}}
+[VAL] loss=2.999212  MAE=10.080  RMSE=15.601  abs_err(p50/p90/p99)=7.077/20.411/65.031
+[VAL][mu] mean=-12.890, std=34.822, min=-82.397, max=82.832, p50=-17.643, p90=36.554, p99=73.636
+[VAL][sigma] mean=14.773, std=9.634, min=5.387, max=89.842, p50=11.560, p90=25.541, p99=55.607
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 10] train_loss=3.014651 val_loss=2.999212 val_MAE=10.080 val_RMSE=15.601 mu_mean=-12.890 sigma_mean=14.773 sigma_p90=25.541 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37154, 'sRE6': 37152, 'sRE4': 37153, 'sRE7': 37149}, 'user': {6: 21468, 2: 20868, 1: 21073, 7: 21584, 4: 20616, 5: 21513, 8: 21486}, 'intf': {'w': 78048, 'wo': 70560}}
+[VAL] loss=3.072810  MAE=10.244  RMSE=16.164  abs_err(p50/p90/p99)=6.937/21.007/66.256
+[VAL][mu] mean=-14.701, std=31.551, min=-83.054, max=73.837, p50=-16.861, p90=26.835, p99=57.813
+[VAL][sigma] mean=10.943, std=6.763, min=4.783, max=80.333, p50=8.565, p90=17.762, p99=41.073
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 11] train_loss=2.996668 val_loss=3.072810 val_MAE=10.244 val_RMSE=16.164 mu_mean=-14.701 sigma_mean=10.943 sigma_p90=17.762 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37153, 'sRE6': 37155, 'sRE7': 37152, 'sRE5': 37148}, 'user': {8: 21484, 2: 20873, 1: 21076, 6: 21465, 4: 20611, 7: 21582, 5: 21517}, 'intf': {'w': 78049, 'wo': 70559}}
+[VAL] loss=3.028224  MAE=10.377  RMSE=15.922  abs_err(p50/p90/p99)=7.495/20.417/64.265
+[VAL][mu] mean=-15.085, std=33.679, min=-82.705, max=79.234, p50=-17.600, p90=29.903, p99=68.341
+[VAL][sigma] mean=12.218, std=6.033, min=5.424, max=77.619, p50=10.507, p90=18.465, p99=36.655
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 12] train_loss=2.979510 val_loss=3.028224 val_MAE=10.377 val_RMSE=15.922 mu_mean=-15.085 sigma_mean=12.218 sigma_p90=18.465 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37151, 'sRE5': 37161, 'sRE4': 37146, 'sRE7': 37150}, 'user': {8: 21485, 7: 21585, 2: 20865, 5: 21516, 6: 21464, 1: 21079, 4: 20614}, 'intf': {'w': 78045, 'wo': 70563}}
+[VAL] loss=2.892913  MAE=8.770  RMSE=14.613  abs_err(p50/p90/p99)=5.432/18.614/62.683
+[VAL][mu] mean=-9.459, std=32.798, min=-81.340, max=79.561, p50=-9.975, p90=33.782, p99=65.083
+[VAL][sigma] mean=13.946, std=7.684, min=5.365, max=105.308, p50=11.730, p90=22.599, p99=42.851
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 13] train_loss=2.961504 val_loss=2.892913 val_MAE=8.770 val_RMSE=14.613 mu_mean=-9.459 sigma_mean=13.946 sigma_p90=22.599 baseline_MAE=17.813
+[epoch 13] ✅ New best val_loss=2.892913. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37150, 'sRE4': 37147, 'sRE7': 37158, 'sRE5': 37153}, 'user': {7: 21585, 1: 21073, 2: 20869, 8: 21483, 6: 21469, 4: 20615, 5: 21514}, 'intf': {'wo': 70561, 'w': 78047}}
+[VAL] loss=2.862364  MAE=8.707  RMSE=14.587  abs_err(p50/p90/p99)=5.408/18.429/62.684
+[VAL][mu] mean=-10.459, std=33.056, min=-76.914, max=78.533, p50=-12.464, p90=32.955, p99=70.817
+[VAL][sigma] mean=12.927, std=7.345, min=5.011, max=81.430, p50=10.879, p90=21.360, p99=41.648
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 14] train_loss=2.942159 val_loss=2.862364 val_MAE=8.707 val_RMSE=14.587 mu_mean=-10.459 sigma_mean=12.927 sigma_p90=21.360 baseline_MAE=17.813
+[epoch 14] ✅ New best val_loss=2.862364. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37156, 'sRE7': 37150, 'sRE4': 37153, 'sRE5': 37149}, 'user': {5: 21512, 1: 21078, 4: 20618, 7: 21581, 8: 21489, 2: 20866, 6: 21464}, 'intf': {'w': 78044, 'wo': 70564}}
+[VAL] loss=2.873040  MAE=8.916  RMSE=14.684  abs_err(p50/p90/p99)=5.617/19.140/63.307
+[VAL][mu] mean=-11.440, std=32.181, min=-80.363, max=71.136, p50=-12.808, p90=31.633, p99=60.499
+[VAL][sigma] mean=11.244, std=6.522, min=4.685, max=87.598, p50=9.154, p90=18.035, p99=37.362
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 15] train_loss=2.921354 val_loss=2.873040 val_MAE=8.916 val_RMSE=14.684 mu_mean=-11.440 sigma_mean=11.244 sigma_p90=18.035 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37157, 'sRE7': 37149, 'sRE6': 37154, 'sRE4': 37148}, 'user': {5: 21516, 8: 21484, 2: 20867, 6: 21465, 1: 21081, 7: 21577, 4: 20618}, 'intf': {'wo': 70564, 'w': 78044}}
+[VAL] loss=2.836528  MAE=8.588  RMSE=14.371  abs_err(p50/p90/p99)=5.322/18.508/60.389
+[VAL][mu] mean=-7.848, std=31.788, min=-76.313, max=82.228, p50=-9.221, p90=34.437, p99=68.692
+[VAL][sigma] mean=12.419, std=8.590, min=4.788, max=137.296, p50=9.710, p90=21.145, p99=46.061
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 16] train_loss=2.904538 val_loss=2.836528 val_MAE=8.588 val_RMSE=14.371 mu_mean=-7.848 sigma_mean=12.419 sigma_p90=21.145 baseline_MAE=17.813
+[epoch 16] ✅ New best val_loss=2.836528. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37150, 'sRE5': 37148, 'sRE4': 37157, 'sRE6': 37153}, 'user': {4: 20617, 5: 21516, 1: 21077, 7: 21585, 8: 21482, 2: 20870, 6: 21461}, 'intf': {'w': 78038, 'wo': 70570}}
+[VAL] loss=2.846992  MAE=8.661  RMSE=14.368  abs_err(p50/p90/p99)=5.508/18.184/59.974
+[VAL][mu] mean=-11.282, std=33.781, min=-77.653, max=82.159, p50=-14.397, p90=34.358, p99=72.602
+[VAL][sigma] mean=11.936, std=7.311, min=4.943, max=115.092, p50=9.574, p90=19.521, p99=41.009
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 17] train_loss=2.891778 val_loss=2.846992 val_MAE=8.661 val_RMSE=14.368 mu_mean=-11.282 sigma_mean=11.936 sigma_p90=19.521 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37155, 'sRE6': 37149, 'sRE4': 37153, 'sRE5': 37151}, 'user': {5: 21508, 2: 20869, 6: 21466, 1: 21080, 4: 20613, 7: 21581, 8: 21491}, 'intf': {'wo': 70551, 'w': 78057}}
+[VAL] loss=2.849895  MAE=8.830  RMSE=14.855  abs_err(p50/p90/p99)=5.340/18.922/63.650
+[VAL][mu] mean=-7.072, std=31.779, min=-77.204, max=78.652, p50=-7.753, p90=35.961, p99=66.077
+[VAL][sigma] mean=12.543, std=8.846, min=4.858, max=148.413, p50=9.601, p90=22.132, p99=48.774
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 18] train_loss=2.871914 val_loss=2.849895 val_MAE=8.830 val_RMSE=14.855 mu_mean=-7.072 sigma_mean=12.543 sigma_p90=22.132 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37157, 'sRE7': 37153, 'sRE4': 37155, 'sRE5': 37143}, 'user': {8: 21481, 1: 21080, 7: 21585, 6: 21461, 4: 20620, 5: 21514, 2: 20867}, 'intf': {'w': 78038, 'wo': 70570}}
+[VAL] loss=2.808860  MAE=8.404  RMSE=13.980  abs_err(p50/p90/p99)=5.173/18.215/59.710
+[VAL][mu] mean=-10.723, std=33.004, min=-81.982, max=76.360, p50=-10.293, p90=32.705, p99=64.060
+[VAL][sigma] mean=10.787, std=7.272, min=4.395, max=128.224, p50=8.277, p90=18.706, p99=38.539
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 19] train_loss=2.852197 val_loss=2.808860 val_MAE=8.404 val_RMSE=13.980 mu_mean=-10.723 sigma_mean=10.787 sigma_p90=18.706 baseline_MAE=17.813
+[epoch 19] ✅ New best val_loss=2.808860. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37145, 'sRE5': 37156, 'sRE7': 37157, 'sRE6': 37150}, 'user': {2: 20868, 4: 20616, 5: 21513, 8: 21484, 1: 21081, 7: 21582, 6: 21464}, 'intf': {'wo': 70563, 'w': 78045}}
+[VAL] loss=2.908569  MAE=9.162  RMSE=15.074  abs_err(p50/p90/p99)=5.852/19.128/62.913
+[VAL][mu] mean=-5.063, std=32.571, min=-79.524, max=82.186, p50=-5.599, p90=37.964, p99=70.269
+[VAL][sigma] mean=12.988, std=8.167, min=4.692, max=109.905, p50=10.584, p90=23.171, p99=42.107
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 20] train_loss=2.841794 val_loss=2.908569 val_MAE=9.162 val_RMSE=15.074 mu_mean=-5.063 sigma_mean=12.988 sigma_p90=23.171 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37148, 'sRE7': 37150, 'sRE4': 37153, 'sRE5': 37157}, 'user': {6: 21469, 4: 20614, 8: 21485, 5: 21513, 2: 20865, 1: 21079, 7: 21583}, 'intf': {'w': 78051, 'wo': 70557}}
+[VAL] loss=2.784728  MAE=8.277  RMSE=14.345  abs_err(p50/p90/p99)=5.027/17.239/61.599
+[VAL][mu] mean=-9.435, std=33.412, min=-78.858, max=80.206, p50=-10.838, p90=34.809, p99=71.274
+[VAL][sigma] mean=11.468, std=8.879, min=4.669, max=148.413, p50=8.686, p90=19.432, p99=47.465
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 21] train_loss=2.826379 val_loss=2.784728 val_MAE=8.277 val_RMSE=14.345 mu_mean=-9.435 sigma_mean=11.468 sigma_p90=19.432 baseline_MAE=17.813
+[epoch 21] ✅ New best val_loss=2.784728. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37150, 'sRE5': 37152, 'sRE7': 37151, 'sRE4': 37155}, 'user': {7: 21586, 2: 20867, 8: 21484, 1: 21079, 5: 21511, 6: 21467, 4: 20614}, 'intf': {'wo': 70553, 'w': 78055}}
+[VAL] loss=2.795174  MAE=8.138  RMSE=13.737  abs_err(p50/p90/p99)=5.046/17.160/58.798
+[VAL][mu] mean=-9.124, std=32.864, min=-75.870, max=80.874, p50=-10.095, p90=34.613, p99=71.191
+[VAL][sigma] mean=10.994, std=7.732, min=4.659, max=134.445, p50=8.444, p90=18.427, p99=41.901
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 22] train_loss=2.811413 val_loss=2.795174 val_MAE=8.138 val_RMSE=13.737 mu_mean=-9.124 sigma_mean=10.994 sigma_p90=18.427 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37145, 'sRE4': 37150, 'sRE6': 37153, 'sRE5': 37160}, 'user': {1: 21079, 6: 21466, 7: 21582, 4: 20615, 8: 21486, 5: 21511, 2: 20869}, 'intf': {'w': 78048, 'wo': 70560}}
+[VAL] loss=2.770706  MAE=8.150  RMSE=13.618  abs_err(p50/p90/p99)=5.129/17.276/56.692
+[VAL][mu] mean=-8.721, std=33.641, min=-78.001, max=81.791, p50=-9.662, p90=36.751, p99=70.439
+[VAL][sigma] mean=11.496, std=7.237, min=4.680, max=119.951, p50=9.213, p90=19.850, p99=38.226
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 23] train_loss=2.795998 val_loss=2.770706 val_MAE=8.150 val_RMSE=13.618 mu_mean=-8.721 sigma_mean=11.496 sigma_p90=19.850 baseline_MAE=17.813
+[epoch 23] ✅ New best val_loss=2.770706. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37149, 'sRE7': 37148, 'sRE6': 37161, 'sRE4': 37150}, 'user': {6: 21468, 4: 20614, 8: 21482, 5: 21513, 2: 20872, 1: 21078, 7: 21581}, 'intf': {'w': 78044, 'wo': 70564}}
+[VAL] loss=2.768529  MAE=8.112  RMSE=13.867  abs_err(p50/p90/p99)=5.083/17.097/58.671
+[VAL][mu] mean=-8.246, std=33.936, min=-78.080, max=88.082, p50=-11.220, p90=37.382, p99=75.338
+[VAL][sigma] mean=11.046, std=8.096, min=4.760, max=141.840, p50=8.273, p90=18.629, p99=43.675
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 24] train_loss=2.780378 val_loss=2.768529 val_MAE=8.112 val_RMSE=13.867 mu_mean=-8.246 sigma_mean=11.046 sigma_p90=18.629 baseline_MAE=17.813
+[epoch 24] ✅ New best val_loss=2.768529. Saved to /home/haotian/ADL_Detection_mengjing/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37154, 'sRE7': 37147, 'sRE4': 37151, 'sRE5': 37156}, 'user': {2: 20867, 6: 21465, 5: 21515, 8: 21485, 1: 21076, 7: 21586, 4: 20614}, 'intf': {'w': 78044, 'wo': 70564}}
+[VAL] loss=2.788764  MAE=8.157  RMSE=13.824  abs_err(p50/p90/p99)=5.096/17.004/58.324
+[VAL][mu] mean=-8.041, std=34.349, min=-81.497, max=85.809, p50=-9.449, p90=38.290, p99=74.257
+[VAL][sigma] mean=12.327, std=8.501, min=4.695, max=117.126, p50=9.575, p90=21.898, p99=44.503
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 25] train_loss=2.766586 val_loss=2.788764 val_MAE=8.157 val_RMSE=13.824 mu_mean=-8.041 sigma_mean=12.327 sigma_p90=21.898 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37147, 'sRE7': 37148, 'sRE5': 37155, 'sRE4': 37158}, 'user': {4: 20612, 1: 21075, 8: 21480, 6: 21464, 7: 21585, 2: 20873, 5: 21519}, 'intf': {'w': 78045, 'wo': 70563}}
+[VAL] loss=2.770195  MAE=8.015  RMSE=13.602  abs_err(p50/p90/p99)=4.943/17.003/58.409
+[VAL][mu] mean=-8.325, std=32.755, min=-83.026, max=81.544, p50=-9.021, p90=34.157, p99=70.711
+[VAL][sigma] mean=10.068, std=6.508, min=4.387, max=119.159, p50=7.768, p90=17.526, p99=34.358
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 30] train_loss=2.684245 val_loss=2.770195 val_MAE=8.015 val_RMSE=13.602 mu_mean=-8.325 sigma_mean=10.068 sigma_p90=17.526 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37151, 'sRE7': 37156, 'sRE5': 37151, 'sRE4': 37150}, 'user': {7: 21582, 2: 20864, 4: 20613, 6: 21464, 8: 21487, 1: 21083, 5: 21515}, 'intf': {'w': 78046, 'wo': 70562}}
+[VAL] loss=2.758483  MAE=7.878  RMSE=13.396  abs_err(p50/p90/p99)=4.952/16.443/57.358
+[VAL][mu] mean=-9.131, std=34.052, min=-83.432, max=83.794, p50=-9.669, p90=36.304, p99=71.679
+[VAL][sigma] mean=9.713, std=6.879, min=4.040, max=113.530, p50=7.427, p90=17.191, p99=35.877
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 31] train_loss=2.667293 val_loss=2.758483 val_MAE=7.878 val_RMSE=13.396 mu_mean=-9.131 sigma_mean=9.713 sigma_p90=17.191 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37152, 'sRE7': 37153, 'sRE5': 37156, 'sRE4': 37147}, 'user': {6: 21466, 8: 21484, 4: 20613, 7: 21581, 1: 21081, 5: 21511, 2: 20872}, 'intf': {'w': 78048, 'wo': 70560}}
+[VAL] loss=2.772575  MAE=7.810  RMSE=13.289  abs_err(p50/p90/p99)=4.895/16.360/55.833
+[VAL][mu] mean=-8.189, std=34.302, min=-84.153, max=84.854, p50=-10.145, p90=37.666, p99=75.001
+[VAL][sigma] mean=9.667, std=6.133, min=4.131, max=100.539, p50=7.463, p90=17.279, p99=31.269
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 32] train_loss=2.643477 val_loss=2.772575 val_MAE=7.810 val_RMSE=13.289 mu_mean=-8.189 sigma_mean=9.667 sigma_p90=17.279 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37152, 'sRE4': 37154, 'sRE5': 37152, 'sRE6': 37150}, 'user': {8: 21481, 6: 21464, 2: 20867, 1: 21079, 4: 20612, 5: 21522, 7: 21583}, 'intf': {'w': 78043, 'wo': 70565}}
+=== Start training seed=42 ===
+Train size: 148680, Val size: 21536
+Log file: /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/train_log_seed42.txt
+Best ckpt: /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[VAL] loss=3.375411  MAE=16.268  RMSE=24.797  abs_err(p50/p90/p99)=9.879/41.418/87.041
+[VAL][mu] mean=-14.266, std=19.314, min=-44.849, max=19.558, p50=-19.357, p90=12.885, p99=17.973
+[VAL][sigma] mean=23.661, std=16.531, min=5.622, max=86.562, p50=17.791, p90=49.032, p99=75.745
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 1] train_loss=11.311819 val_loss=3.375411 val_MAE=16.268 val_RMSE=24.797 mu_mean=-14.266 sigma_mean=23.661 sigma_p90=49.032 baseline_MAE=17.813
+[epoch 1] ✅ New best val_loss=3.375411. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37152, 'sRE4': 37150, 'sRE5': 37155, 'sRE7': 37151}, 'user': {6: 21463, 7: 21579, 1: 21076, 8: 21487, 4: 20619, 5: 21511, 2: 20873}, 'intf': {'w': 78046, 'wo': 70562}}
+[VAL] loss=3.128329  MAE=11.000  RMSE=18.613  abs_err(p50/p90/p99)=6.307/25.416/80.471
+[VAL][mu] mean=-6.951, std=30.500, min=-76.134, max=59.828, p50=-8.599, p90=35.457, p99=54.101
+[VAL][sigma] mean=20.118, std=13.190, min=6.710, max=106.955, p50=14.725, p90=39.271, p99=65.470
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 2] train_loss=3.329417 val_loss=3.128329 val_MAE=11.000 val_RMSE=18.613 mu_mean=-6.951 sigma_mean=20.118 sigma_p90=39.271 baseline_MAE=17.813
+[epoch 2] ✅ New best val_loss=3.128329. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37153, 'sRE5': 37152, 'sRE7': 37149, 'sRE4': 37154}, 'user': {5: 21518, 7: 21581, 2: 20871, 8: 21482, 4: 20614, 1: 21075, 6: 21467}, 'intf': {'wo': 70560, 'w': 78048}}
+[VAL] loss=3.052275  MAE=10.680  RMSE=17.741  abs_err(p50/p90/p99)=6.426/23.142/76.574
+[VAL][mu] mean=-10.617, std=27.872, min=-72.973, max=65.724, p50=-11.516, p90=25.601, p99=60.257
+[VAL][sigma] mean=15.572, std=10.249, min=6.517, max=115.185, p50=11.741, p90=27.153, p99=57.195
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 3] train_loss=3.213546 val_loss=3.052275 val_MAE=10.680 val_RMSE=17.741 mu_mean=-10.617 sigma_mean=15.572 sigma_p90=27.153 baseline_MAE=17.813
+[epoch 3] ✅ New best val_loss=3.052275. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37152, 'sRE6': 37156, 'sRE7': 37144, 'sRE4': 37156}, 'user': {5: 21513, 4: 20611, 1: 21079, 7: 21585, 2: 20871, 6: 21461, 8: 21488}, 'intf': {'w': 78042, 'wo': 70566}}
+[VAL] loss=3.188523  MAE=12.555  RMSE=19.474  abs_err(p50/p90/p99)=8.612/25.705/81.373
+[VAL][mu] mean=-17.879, std=30.852, min=-80.119, max=57.195, p50=-18.092, p90=22.183, p99=52.037
+[VAL][sigma] mean=17.434, std=10.925, min=5.826, max=148.413, p50=13.619, p90=32.480, p99=54.950
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 4] train_loss=3.158202 val_loss=3.188523 val_MAE=12.555 val_RMSE=19.474 mu_mean=-17.879 sigma_mean=17.434 sigma_p90=32.480 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37156, 'sRE4': 37156, 'sRE6': 37147, 'sRE5': 37149}, 'user': {7: 21585, 2: 20868, 6: 21469, 1: 21073, 5: 21513, 8: 21485, 4: 20615}, 'intf': {'wo': 70566, 'w': 78042}}
+[VAL] loss=2.989828  MAE=9.534  RMSE=16.017  abs_err(p50/p90/p99)=5.818/20.291/68.964
+[VAL][mu] mean=-7.396, std=32.514, min=-75.673, max=81.204, p50=-9.268, p90=35.612, p99=72.588
+[VAL][sigma] mean=15.615, std=9.672, min=6.593, max=101.362, p50=12.244, p90=26.043, p99=57.559
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 5] train_loss=3.129323 val_loss=2.989828 val_MAE=9.534 val_RMSE=16.017 mu_mean=-7.396 sigma_mean=15.615 sigma_p90=26.043 baseline_MAE=17.813
+[epoch 5] ✅ New best val_loss=2.989828. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37147, 'sRE6': 37154, 'sRE7': 37151, 'sRE5': 37156}, 'user': {7: 21577, 5: 21514, 6: 21466, 4: 20617, 8: 21482, 1: 21081, 2: 20871}, 'intf': {'wo': 70566, 'w': 78042}}
+[VAL] loss=2.941408  MAE=9.280  RMSE=15.790  abs_err(p50/p90/p99)=5.524/19.897/66.736
+[VAL][mu] mean=-8.791, std=31.681, min=-75.982, max=68.682, p50=-9.323, p90=32.516, p99=63.680
+[VAL][sigma] mean=12.787, std=7.690, min=5.452, max=92.947, p50=10.276, p90=21.005, p99=44.455
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 6] train_loss=3.100884 val_loss=2.941408 val_MAE=9.280 val_RMSE=15.790 mu_mean=-8.791 sigma_mean=12.787 sigma_p90=21.005 baseline_MAE=17.813
+[epoch 6] ✅ New best val_loss=2.941408. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37155, 'sRE4': 37150, 'sRE5': 37149, 'sRE6': 37154}, 'user': {6: 21466, 7: 21579, 1: 21076, 8: 21483, 5: 21515, 4: 20619, 2: 20870}, 'intf': {'w': 78046, 'wo': 70562}}
+[VAL] loss=2.939440  MAE=9.308  RMSE=15.620  abs_err(p50/p90/p99)=5.689/19.777/67.168
+[VAL][mu] mean=-10.187, std=33.002, min=-79.135, max=75.929, p50=-11.312, p90=31.387, p99=68.667
+[VAL][sigma] mean=14.624, std=8.815, min=6.198, max=91.923, p50=11.531, p90=24.398, p99=49.785
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 7] train_loss=3.082196 val_loss=2.939440 val_MAE=9.308 val_RMSE=15.620 mu_mean=-10.187 sigma_mean=14.624 sigma_p90=24.398 baseline_MAE=17.813
+[epoch 7] ✅ New best val_loss=2.939440. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37145, 'sRE4': 37159, 'sRE5': 37151, 'sRE6': 37153}, 'user': {1: 21080, 4: 20609, 6: 21461, 5: 21516, 7: 21585, 2: 20872, 8: 21485}, 'intf': {'w': 78040, 'wo': 70568}}
+[VAL] loss=2.940767  MAE=9.390  RMSE=15.824  abs_err(p50/p90/p99)=5.738/19.822/66.191
+[VAL][mu] mean=-7.478, std=33.880, min=-73.849, max=83.093, p50=-10.745, p90=39.285, p99=76.383
+[VAL][sigma] mean=12.507, std=7.452, min=4.986, max=69.447, p50=9.910, p90=20.311, p99=45.095
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 8] train_loss=3.055185 val_loss=2.940767 val_MAE=9.390 val_RMSE=15.824 mu_mean=-7.478 sigma_mean=12.507 sigma_p90=20.311 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37150, 'sRE5': 37153, 'sRE6': 37148, 'sRE4': 37157}, 'user': {5: 21511, 7: 21576, 6: 21470, 1: 21081, 4: 20613, 2: 20873, 8: 21484}, 'intf': {'w': 78040, 'wo': 70568}}
+[VAL] loss=2.933392  MAE=9.264  RMSE=15.789  abs_err(p50/p90/p99)=5.565/19.633/69.859
+[VAL][mu] mean=-8.182, std=33.820, min=-81.042, max=75.021, p50=-8.532, p90=37.771, p99=68.767
+[VAL][sigma] mean=13.520, std=10.989, min=5.300, max=132.132, p50=9.889, p90=22.559, p99=63.638
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 9] train_loss=3.035556 val_loss=2.933392 val_MAE=9.264 val_RMSE=15.789 mu_mean=-8.182 sigma_mean=13.520 sigma_p90=22.559 baseline_MAE=17.813
+[epoch 9] ✅ New best val_loss=2.933392. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37153, 'sRE7': 37156, 'sRE5': 37152, 'sRE6': 37147}, 'user': {8: 21488, 6: 21469, 7: 21580, 2: 20866, 4: 20616, 5: 21511, 1: 21078}, 'intf': {'w': 78054, 'wo': 70554}}
+[VAL] loss=3.075725  MAE=10.901  RMSE=16.276  abs_err(p50/p90/p99)=8.038/21.550/66.674
+[VAL][mu] mean=-15.097, std=35.173, min=-83.535, max=73.180, p50=-18.008, p90=33.350, p99=68.892
+[VAL][sigma] mean=14.798, std=10.464, min=5.344, max=110.200, p50=11.454, p90=25.895, p99=60.222
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 10] train_loss=3.013838 val_loss=3.075725 val_MAE=10.901 val_RMSE=16.276 mu_mean=-15.097 sigma_mean=14.798 sigma_p90=25.895 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37154, 'sRE6': 37152, 'sRE4': 37153, 'sRE7': 37149}, 'user': {6: 21468, 2: 20868, 1: 21073, 7: 21584, 4: 20616, 5: 21513, 8: 21486}, 'intf': {'w': 78048, 'wo': 70560}}
+[VAL] loss=2.902750  MAE=8.792  RMSE=14.791  abs_err(p50/p90/p99)=5.451/18.592/63.510
+[VAL][mu] mean=-9.735, std=32.204, min=-74.026, max=77.657, p50=-12.767, p90=34.776, p99=69.631
+[VAL][sigma] mean=10.854, std=6.469, min=4.812, max=101.740, p50=8.744, p90=16.990, p99=38.620
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 11] train_loss=2.996998 val_loss=2.902750 val_MAE=8.792 val_RMSE=14.791 mu_mean=-9.735 sigma_mean=10.854 sigma_p90=16.990 baseline_MAE=17.813
+[epoch 11] ✅ New best val_loss=2.902750. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37153, 'sRE6': 37155, 'sRE7': 37152, 'sRE5': 37148}, 'user': {8: 21484, 2: 20873, 1: 21076, 6: 21465, 4: 20611, 7: 21582, 5: 21517}, 'intf': {'w': 78049, 'wo': 70559}}
+[VAL] loss=2.919058  MAE=9.175  RMSE=15.048  abs_err(p50/p90/p99)=5.902/19.078/64.473
+[VAL][mu] mean=-11.964, std=32.037, min=-77.069, max=74.321, p50=-14.885, p90=30.621, p99=69.595
+[VAL][sigma] mean=11.560, std=7.670, min=4.829, max=93.415, p50=9.204, p90=18.096, p99=46.642
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 12] train_loss=2.972554 val_loss=2.919058 val_MAE=9.175 val_RMSE=15.048 mu_mean=-11.964 sigma_mean=11.560 sigma_p90=18.096 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37151, 'sRE5': 37161, 'sRE4': 37146, 'sRE7': 37150}, 'user': {8: 21485, 7: 21585, 2: 20865, 5: 21516, 6: 21464, 1: 21079, 4: 20614}, 'intf': {'w': 78045, 'wo': 70563}}
+[VAL] loss=2.921683  MAE=9.102  RMSE=15.596  abs_err(p50/p90/p99)=5.429/19.321/67.615
+[VAL][mu] mean=-10.066, std=32.252, min=-76.799, max=78.121, p50=-11.819, p90=33.097, p99=69.252
+[VAL][sigma] mean=15.942, std=11.877, min=5.391, max=148.413, p50=12.156, p90=27.572, p99=68.578
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 13] train_loss=2.950674 val_loss=2.921683 val_MAE=9.102 val_RMSE=15.596 mu_mean=-10.066 sigma_mean=15.942 sigma_p90=27.572 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37150, 'sRE4': 37147, 'sRE7': 37158, 'sRE5': 37153}, 'user': {7: 21585, 1: 21073, 2: 20869, 8: 21483, 6: 21469, 4: 20615, 5: 21514}, 'intf': {'wo': 70561, 'w': 78047}}
+[VAL] loss=2.835743  MAE=8.488  RMSE=14.429  abs_err(p50/p90/p99)=5.216/17.699/61.574
+[VAL][mu] mean=-10.139, std=33.097, min=-76.411, max=77.603, p50=-12.137, p90=33.519, p99=70.794
+[VAL][sigma] mean=11.222, std=6.744, min=4.896, max=85.856, p50=9.040, p90=18.302, p99=39.181
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 14] train_loss=2.930775 val_loss=2.835743 val_MAE=8.488 val_RMSE=14.429 mu_mean=-10.139 sigma_mean=11.222 sigma_p90=18.302 baseline_MAE=17.813
+[epoch 14] ✅ New best val_loss=2.835743. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37156, 'sRE7': 37150, 'sRE4': 37153, 'sRE5': 37149}, 'user': {5: 21512, 1: 21078, 4: 20618, 7: 21581, 8: 21489, 2: 20866, 6: 21464}, 'intf': {'w': 78044, 'wo': 70564}}
+[VAL] loss=2.857053  MAE=8.812  RMSE=14.810  abs_err(p50/p90/p99)=5.460/18.637/62.348
+[VAL][mu] mean=-11.547, std=33.776, min=-78.196, max=74.048, p50=-13.147, p90=33.859, p99=67.641
+[VAL][sigma] mean=12.974, std=7.966, min=5.227, max=100.593, p50=10.627, p90=21.246, p99=45.305
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 15] train_loss=2.910519 val_loss=2.857053 val_MAE=8.812 val_RMSE=14.810 mu_mean=-11.547 sigma_mean=12.974 sigma_p90=21.246 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37157, 'sRE7': 37149, 'sRE6': 37154, 'sRE4': 37148}, 'user': {5: 21516, 8: 21484, 2: 20867, 6: 21465, 1: 21081, 7: 21577, 4: 20618}, 'intf': {'wo': 70564, 'w': 78044}}
+[VAL] loss=2.809914  MAE=8.426  RMSE=14.245  abs_err(p50/p90/p99)=5.249/17.856/61.076
+[VAL][mu] mean=-8.489, std=32.971, min=-77.582, max=77.746, p50=-10.009, p90=35.805, p99=72.522
+[VAL][sigma] mean=12.891, std=9.219, min=4.797, max=118.951, p50=9.803, p90=22.507, p99=50.727
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 16] train_loss=2.892720 val_loss=2.809914 val_MAE=8.426 val_RMSE=14.245 mu_mean=-8.489 sigma_mean=12.891 sigma_p90=22.507 baseline_MAE=17.813
+[epoch 16] ✅ New best val_loss=2.809914. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37150, 'sRE5': 37148, 'sRE4': 37157, 'sRE6': 37153}, 'user': {4: 20617, 5: 21516, 1: 21077, 7: 21585, 8: 21482, 2: 20870, 6: 21461}, 'intf': {'w': 78038, 'wo': 70570}}
+[VAL] loss=2.835043  MAE=8.590  RMSE=14.419  abs_err(p50/p90/p99)=5.455/17.799/61.369
+[VAL][mu] mean=-8.695, std=34.606, min=-80.133, max=78.882, p50=-11.209, p90=39.553, p99=74.556
+[VAL][sigma] mean=12.709, std=7.861, min=5.018, max=115.698, p50=10.531, p90=20.537, p99=45.759
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 17] train_loss=2.874246 val_loss=2.835043 val_MAE=8.590 val_RMSE=14.419 mu_mean=-8.695 sigma_mean=12.709 sigma_p90=20.537 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37155, 'sRE6': 37149, 'sRE4': 37153, 'sRE5': 37151}, 'user': {5: 21508, 2: 20869, 6: 21466, 1: 21080, 4: 20613, 7: 21581, 8: 21491}, 'intf': {'wo': 70551, 'w': 78057}}
+[VAL] loss=2.822379  MAE=8.412  RMSE=14.110  abs_err(p50/p90/p99)=5.197/17.874/59.674
+[VAL][mu] mean=-10.384, std=32.357, min=-78.422, max=72.204, p50=-11.242, p90=33.718, p99=64.717
+[VAL][sigma] mean=11.619, std=8.439, min=4.867, max=148.413, p50=8.960, p90=19.349, p99=48.480
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 18] train_loss=2.854237 val_loss=2.822379 val_MAE=8.412 val_RMSE=14.110 mu_mean=-10.384 sigma_mean=11.619 sigma_p90=19.349 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37157, 'sRE7': 37153, 'sRE4': 37155, 'sRE5': 37143}, 'user': {8: 21481, 1: 21080, 7: 21585, 6: 21461, 4: 20620, 5: 21514, 2: 20867}, 'intf': {'w': 78038, 'wo': 70570}}
+[VAL] loss=2.778494  MAE=8.165  RMSE=13.893  abs_err(p50/p90/p99)=5.012/17.144/59.919
+[VAL][mu] mean=-8.085, std=33.299, min=-78.287, max=77.999, p50=-9.161, p90=36.704, p99=72.494
+[VAL][sigma] mean=11.387, std=8.421, min=4.845, max=141.020, p50=8.297, p90=19.848, p99=47.304
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 19] train_loss=2.834926 val_loss=2.778494 val_MAE=8.165 val_RMSE=13.893 mu_mean=-8.085 sigma_mean=11.387 sigma_p90=19.848 baseline_MAE=17.813
+[epoch 19] ✅ New best val_loss=2.778494. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37145, 'sRE5': 37156, 'sRE7': 37157, 'sRE6': 37150}, 'user': {2: 20868, 4: 20616, 5: 21513, 8: 21484, 1: 21081, 7: 21582, 6: 21464}, 'intf': {'wo': 70563, 'w': 78045}}
+[VAL] loss=2.851921  MAE=8.555  RMSE=14.039  abs_err(p50/p90/p99)=5.508/17.611/59.572
+[VAL][mu] mean=-6.881, std=33.153, min=-79.336, max=79.347, p50=-7.026, p90=35.417, p99=73.334
+[VAL][sigma] mean=12.080, std=7.230, min=4.695, max=97.588, p50=10.027, p90=20.291, p99=39.578
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 20] train_loss=2.822043 val_loss=2.851921 val_MAE=8.555 val_RMSE=14.039 mu_mean=-6.881 sigma_mean=12.080 sigma_p90=20.291 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37148, 'sRE7': 37150, 'sRE4': 37153, 'sRE5': 37157}, 'user': {6: 21469, 4: 20614, 8: 21485, 5: 21513, 2: 20865, 1: 21079, 7: 21583}, 'intf': {'w': 78051, 'wo': 70557}}
+[VAL] loss=2.781780  MAE=8.173  RMSE=13.915  abs_err(p50/p90/p99)=5.042/17.003/59.683
+[VAL][mu] mean=-8.873, std=33.825, min=-78.912, max=80.520, p50=-11.524, p90=35.646, p99=75.724
+[VAL][sigma] mean=10.989, std=7.479, min=4.643, max=103.594, p50=8.386, p90=19.053, p99=41.260
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 21] train_loss=2.802961 val_loss=2.781780 val_MAE=8.173 val_RMSE=13.915 mu_mean=-8.873 sigma_mean=10.989 sigma_p90=19.053 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37150, 'sRE5': 37152, 'sRE7': 37151, 'sRE4': 37155}, 'user': {7: 21586, 2: 20867, 8: 21484, 1: 21079, 5: 21511, 6: 21467, 4: 20614}, 'intf': {'wo': 70553, 'w': 78055}}
+[VAL] loss=2.798113  MAE=8.275  RMSE=14.000  abs_err(p50/p90/p99)=5.078/17.431/59.629
+[VAL][mu] mean=-9.415, std=32.372, min=-78.000, max=75.428, p50=-9.591, p90=33.362, p99=67.968
+[VAL][sigma] mean=11.349, std=8.305, min=4.898, max=148.413, p50=8.774, p90=18.900, p99=48.696
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 22] train_loss=2.787165 val_loss=2.798113 val_MAE=8.275 val_RMSE=14.000 mu_mean=-9.415 sigma_mean=11.349 sigma_p90=18.900 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37145, 'sRE4': 37150, 'sRE6': 37153, 'sRE5': 37160}, 'user': {1: 21079, 6: 21466, 7: 21582, 4: 20615, 8: 21486, 5: 21511, 2: 20869}, 'intf': {'w': 78048, 'wo': 70560}}
+[VAL] loss=2.769548  MAE=8.071  RMSE=13.720  abs_err(p50/p90/p99)=5.041/17.052/56.931
+[VAL][mu] mean=-9.523, std=33.249, min=-79.265, max=74.391, p50=-10.517, p90=35.378, p99=69.943
+[VAL][sigma] mean=10.853, std=7.162, min=4.773, max=128.816, p50=8.751, p90=17.543, p99=40.169
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 23] train_loss=2.767569 val_loss=2.769548 val_MAE=8.071 val_RMSE=13.720 mu_mean=-9.523 sigma_mean=10.853 sigma_p90=17.543 baseline_MAE=17.813
+[epoch 23] ✅ New best val_loss=2.769548. Saved to /home/haotian/RLoc/reproduction/results/S6/leave_one_user_out/epoch100/rloc_seed42.pt
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37149, 'sRE7': 37148, 'sRE6': 37161, 'sRE4': 37150}, 'user': {6: 21468, 4: 20614, 8: 21482, 5: 21513, 2: 20872, 1: 21078, 7: 21581}, 'intf': {'w': 78044, 'wo': 70564}}
+[VAL] loss=2.794860  MAE=8.333  RMSE=14.018  abs_err(p50/p90/p99)=5.315/17.125/60.149
+[VAL][mu] mean=-10.695, std=35.246, min=-84.742, max=78.445, p50=-13.081, p90=37.031, p99=73.319
+[VAL][sigma] mean=11.115, std=8.304, min=4.625, max=148.413, p50=8.356, p90=18.510, p99=46.801
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 24] train_loss=2.754522 val_loss=2.794860 val_MAE=8.333 val_RMSE=14.018 mu_mean=-10.695 sigma_mean=11.115 sigma_p90=18.510 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37154, 'sRE7': 37147, 'sRE4': 37151, 'sRE5': 37156}, 'user': {2: 20867, 6: 21465, 5: 21515, 8: 21485, 1: 21076, 7: 21586, 4: 20614}, 'intf': {'w': 78044, 'wo': 70564}}
+[VAL] loss=2.774946  MAE=8.135  RMSE=13.894  abs_err(p50/p90/p99)=4.999/17.023/59.477
+[VAL][mu] mean=-9.283, std=32.445, min=-80.756, max=77.264, p50=-9.390, p90=33.217, p99=67.987
+[VAL][sigma] mean=11.948, std=10.306, min=4.828, max=148.413, p50=8.471, p90=20.834, p99=58.444
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 25] train_loss=2.735022 val_loss=2.774946 val_MAE=8.135 val_RMSE=13.894 mu_mean=-9.283 sigma_mean=11.948 sigma_p90=20.834 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37147, 'sRE7': 37148, 'sRE5': 37155, 'sRE4': 37158}, 'user': {4: 20612, 1: 21075, 8: 21480, 6: 21464, 7: 21585, 2: 20873, 5: 21519}, 'intf': {'w': 78045, 'wo': 70563}}
+[VAL] loss=2.785466  MAE=7.892  RMSE=13.519  abs_err(p50/p90/p99)=4.932/16.368/57.921
+[VAL][mu] mean=-8.419, std=34.257, min=-79.167, max=81.878, p50=-9.654, p90=37.649, p99=75.447
+[VAL][sigma] mean=9.596, std=6.217, min=4.633, max=131.949, p50=7.298, p90=16.085, p99=34.354
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 26] train_loss=2.716182 val_loss=2.785466 val_MAE=7.892 val_RMSE=13.519 mu_mean=-8.419 sigma_mean=9.596 sigma_p90=16.085 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37144, 'sRE4': 37158, 'sRE7': 37155, 'sRE6': 37151}, 'user': {1: 21075, 7: 21581, 5: 21516, 8: 21484, 4: 20613, 2: 20872, 6: 21467}, 'intf': {'wo': 70562, 'w': 78046}}
+[VAL] loss=2.788529  MAE=7.966  RMSE=13.558  abs_err(p50/p90/p99)=5.015/16.484/57.462
+[VAL][mu] mean=-9.120, std=34.230, min=-79.158, max=77.409, p50=-9.181, p90=36.587, p99=70.351
+[VAL][sigma] mean=10.050, std=6.548, min=4.589, max=108.787, p50=7.909, p90=16.486, p99=37.752
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 27] train_loss=2.691698 val_loss=2.788529 val_MAE=7.966 val_RMSE=13.558 mu_mean=-9.120 sigma_mean=10.050 sigma_p90=16.486 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37152, 'sRE6': 37150, 'sRE5': 37149, 'sRE4': 37157}, 'user': {4: 20615, 7: 21579, 2: 20872, 1: 21082, 5: 21516, 8: 21481, 6: 21463}, 'intf': {'wo': 70566, 'w': 78042}}
+[VAL] loss=2.825537  MAE=8.014  RMSE=13.563  abs_err(p50/p90/p99)=5.052/16.452/57.778
+[VAL][mu] mean=-8.656, std=33.861, min=-80.309, max=78.712, p50=-8.800, p90=35.585, p99=72.452
+[VAL][sigma] mean=10.052, std=6.721, min=4.573, max=117.705, p50=7.559, p90=17.609, p99=35.947
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 28] train_loss=2.680363 val_loss=2.825537 val_MAE=8.014 val_RMSE=13.563 mu_mean=-8.656 sigma_mean=10.052 sigma_p90=17.609 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37146, 'sRE4': 37160, 'sRE7': 37149, 'sRE5': 37153}, 'user': {1: 21081, 8: 21483, 2: 20866, 5: 21514, 7: 21578, 6: 21465, 4: 20621}, 'intf': {'w': 78049, 'wo': 70559}}
+[VAL] loss=2.828089  MAE=8.002  RMSE=13.731  abs_err(p50/p90/p99)=5.007/16.678/56.442
+[VAL][mu] mean=-9.173, std=35.374, min=-83.160, max=82.793, p50=-10.328, p90=37.908, p99=77.212
+[VAL][sigma] mean=9.429, std=5.829, min=4.549, max=132.259, p50=7.558, p90=15.345, p99=33.280
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 29] train_loss=2.654260 val_loss=2.828089 val_MAE=8.002 val_RMSE=13.731 mu_mean=-9.173 sigma_mean=9.429 sigma_p90=15.345 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37158, 'sRE6': 37157, 'sRE5': 37144, 'sRE4': 37149}, 'user': {8: 21489, 5: 21518, 6: 21460, 4: 20618, 1: 21080, 7: 21576, 2: 20867}, 'intf': {'w': 78044, 'wo': 70564}}
+[VAL] loss=2.906387  MAE=7.928  RMSE=13.530  abs_err(p50/p90/p99)=4.875/16.457/58.300
+[VAL][mu] mean=-9.845, std=33.028, min=-82.517, max=77.896, p50=-10.751, p90=33.491, p99=69.872
+[VAL][sigma] mean=8.207, std=4.930, min=4.510, max=83.788, p50=6.389, p90=13.225, p99=28.367
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 30] train_loss=2.624622 val_loss=2.906387 val_MAE=7.928 val_RMSE=13.530 mu_mean=-9.845 sigma_mean=8.207 sigma_p90=13.225 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37151, 'sRE7': 37156, 'sRE5': 37151, 'sRE4': 37150}, 'user': {7: 21582, 2: 20864, 4: 20613, 6: 21464, 8: 21487, 1: 21083, 5: 21515}, 'intf': {'w': 78046, 'wo': 70562}}
+[VAL] loss=2.843726  MAE=7.929  RMSE=13.407  abs_err(p50/p90/p99)=4.925/16.473/56.269
+[VAL][mu] mean=-9.830, std=34.459, min=-82.395, max=82.481, p50=-10.722, p90=36.330, p99=72.903
+[VAL][sigma] mean=8.900, std=5.402, min=4.494, max=130.829, p50=7.120, p90=14.399, p99=30.139
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 31] train_loss=2.605089 val_loss=2.843726 val_MAE=7.929 val_RMSE=13.407 mu_mean=-9.830 sigma_mean=8.900 sigma_p90=14.399 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37152, 'sRE7': 37153, 'sRE5': 37156, 'sRE4': 37147}, 'user': {6: 21466, 8: 21484, 4: 20613, 7: 21581, 1: 21081, 5: 21511, 2: 20872}, 'intf': {'w': 78048, 'wo': 70560}}
+[VAL] loss=2.885350  MAE=7.942  RMSE=13.492  abs_err(p50/p90/p99)=4.969/16.337/57.601
+[VAL][mu] mean=-9.388, std=35.137, min=-85.442, max=80.007, p50=-10.960, p90=37.268, p99=75.827
+[VAL][sigma] mean=8.765, std=5.126, min=4.339, max=66.210, p50=6.867, p90=14.572, p99=28.538
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 32] train_loss=2.576193 val_loss=2.885350 val_MAE=7.942 val_RMSE=13.492 mu_mean=-9.388 sigma_mean=8.765 sigma_p90=14.572 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37152, 'sRE4': 37154, 'sRE5': 37152, 'sRE6': 37150}, 'user': {8: 21481, 6: 21464, 2: 20867, 1: 21079, 4: 20612, 5: 21522, 7: 21583}, 'intf': {'w': 78043, 'wo': 70565}}
+[VAL] loss=2.970010  MAE=7.937  RMSE=13.616  abs_err(p50/p90/p99)=4.925/16.414/58.624
+[VAL][mu] mean=-9.389, std=33.886, min=-84.457, max=82.749, p50=-10.208, p90=36.341, p99=72.971
+[VAL][sigma] mean=7.986, std=5.251, min=4.177, max=91.517, p50=6.121, p90=12.829, p99=29.520
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 33] train_loss=2.552693 val_loss=2.970010 val_MAE=7.937 val_RMSE=13.616 mu_mean=-9.389 sigma_mean=7.986 sigma_p90=12.829 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37150, 'sRE5': 37156, 'sRE7': 37148, 'sRE4': 37154}, 'user': {5: 21512, 6: 21469, 7: 21584, 2: 20871, 8: 21488, 1: 21075, 4: 20609}, 'intf': {'w': 78054, 'wo': 70554}}
+[VAL] loss=2.988536  MAE=8.014  RMSE=13.672  abs_err(p50/p90/p99)=5.031/16.630/56.799
+[VAL][mu] mean=-10.059, std=33.943, min=-81.382, max=81.082, p50=-11.575, p90=36.295, p99=74.042
+[VAL][sigma] mean=8.259, std=5.396, min=4.183, max=90.073, p50=6.315, p90=13.475, p99=30.208
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 34] train_loss=2.518655 val_loss=2.988536 val_MAE=8.014 val_RMSE=13.672 mu_mean=-10.059 sigma_mean=8.259 sigma_p90=13.475 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37157, 'sRE4': 37151, 'sRE5': 37152, 'sRE7': 37148}, 'user': {1: 21078, 2: 20866, 5: 21514, 6: 21462, 8: 21487, 7: 21585, 4: 20616}, 'intf': {'wo': 70567, 'w': 78041}}
+[VAL] loss=3.015089  MAE=8.125  RMSE=13.935  abs_err(p50/p90/p99)=5.053/16.906/58.998
+[VAL][mu] mean=-8.698, std=35.022, min=-85.272, max=82.895, p50=-10.270, p90=39.329, p99=76.635
+[VAL][sigma] mean=8.326, std=5.949, min=4.017, max=148.413, p50=6.362, p90=13.531, p99=32.105
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 35] train_loss=2.489041 val_loss=3.015089 val_MAE=8.125 val_RMSE=13.935 mu_mean=-8.698 sigma_mean=8.326 sigma_p90=13.531 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37151, 'sRE7': 37157, 'sRE6': 37149, 'sRE5': 37151}, 'user': {2: 20871, 7: 21586, 1: 21072, 4: 20612, 8: 21486, 6: 21464, 5: 21517}, 'intf': {'wo': 70565, 'w': 78043}}
+[VAL] loss=3.084859  MAE=8.071  RMSE=13.651  abs_err(p50/p90/p99)=5.070/16.803/59.302
+[VAL][mu] mean=-9.734, std=33.680, min=-84.012, max=82.258, p50=-10.291, p90=35.233, p99=71.027
+[VAL][sigma] mean=7.699, std=5.294, min=3.823, max=116.998, p50=5.841, p90=12.817, p99=28.580
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 36] train_loss=2.453306 val_loss=3.084859 val_MAE=8.071 val_RMSE=13.651 mu_mean=-9.734 sigma_mean=7.699 sigma_p90=12.817 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37148, 'sRE7': 37154, 'sRE6': 37152, 'sRE5': 37154}, 'user': {2: 20867, 5: 21509, 4: 20616, 7: 21586, 6: 21466, 8: 21484, 1: 21080}, 'intf': {'wo': 70559, 'w': 78049}}
+[VAL] loss=3.209832  MAE=8.209  RMSE=13.918  abs_err(p50/p90/p99)=5.148/16.964/59.156
+[VAL][mu] mean=-7.320, std=33.897, min=-83.912, max=82.676, p50=-8.979, p90=37.797, p99=76.301
+[VAL][sigma] mean=7.496, std=4.646, min=3.647, max=87.848, p50=5.739, p90=12.800, p99=25.694
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 37] train_loss=2.417994 val_loss=3.209832 val_MAE=8.209 val_RMSE=13.918 mu_mean=-7.320 sigma_mean=7.496 sigma_p90=12.800 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37159, 'sRE4': 37152, 'sRE6': 37146, 'sRE7': 37151}, 'user': {7: 21580, 4: 20609, 2: 20871, 5: 21517, 8: 21485, 6: 21464, 1: 21082}, 'intf': {'wo': 70564, 'w': 78044}}
+[VAL] loss=3.251340  MAE=8.315  RMSE=14.017  abs_err(p50/p90/p99)=5.223/17.394/58.206
+[VAL][mu] mean=-7.515, std=35.023, min=-84.075, max=85.679, p50=-9.502, p90=39.105, p99=77.686
+[VAL][sigma] mean=7.535, std=5.121, min=3.547, max=94.859, p50=5.687, p90=12.810, p99=28.066
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 38] train_loss=2.382440 val_loss=3.251340 val_MAE=8.315 val_RMSE=14.017 mu_mean=-7.515 sigma_mean=7.535 sigma_p90=12.810 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37155, 'sRE5': 37153, 'sRE6': 37149, 'sRE4': 37151}, 'user': {4: 20612, 2: 20866, 5: 21511, 6: 21470, 1: 21077, 7: 21586, 8: 21486}, 'intf': {'w': 78050, 'wo': 70558}}
+[VAL] loss=3.361517  MAE=8.246  RMSE=14.054  abs_err(p50/p90/p99)=5.121/17.275/59.351
+[VAL][mu] mean=-9.625, std=34.473, min=-84.846, max=85.302, p50=-10.949, p90=37.749, p99=76.072
+[VAL][sigma] mean=6.955, std=4.256, min=3.361, max=92.753, p50=5.483, p90=11.336, p99=22.856
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 39] train_loss=2.344276 val_loss=3.361517 val_MAE=8.246 val_RMSE=14.054 mu_mean=-9.625 sigma_mean=6.955 sigma_p90=11.336 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37156, 'sRE7': 37150, 'sRE4': 37154, 'sRE5': 37148}, 'user': {8: 21480, 1: 21077, 7: 21587, 6: 21465, 4: 20619, 2: 20867, 5: 21513}, 'intf': {'w': 78047, 'wo': 70561}}
+[VAL] loss=3.486091  MAE=8.141  RMSE=13.698  abs_err(p50/p90/p99)=5.131/17.069/57.526
+[VAL][mu] mean=-9.163, std=33.717, min=-82.758, max=82.718, p50=-9.750, p90=35.466, p99=73.696
+[VAL][sigma] mean=6.656, std=3.945, min=3.182, max=75.898, p50=5.252, p90=11.089, p99=22.034
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 40] train_loss=2.306931 val_loss=3.486091 val_MAE=8.141 val_RMSE=13.698 mu_mean=-9.163 sigma_mean=6.656 sigma_p90=11.089 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37159, 'sRE6': 37147, 'sRE7': 37153, 'sRE4': 37149}, 'user': {6: 21464, 7: 21580, 8: 21484, 2: 20871, 5: 21515, 1: 21078, 4: 20616}, 'intf': {'w': 78039, 'wo': 70569}}
+[VAL] loss=3.658416  MAE=8.297  RMSE=13.987  abs_err(p50/p90/p99)=5.158/17.420/57.280
+[VAL][mu] mean=-9.308, std=34.782, min=-85.415, max=88.992, p50=-11.360, p90=37.794, p99=77.414
+[VAL][sigma] mean=6.463, std=4.016, min=3.137, max=73.663, p50=5.074, p90=10.628, p99=22.404
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 41] train_loss=2.272552 val_loss=3.658416 val_MAE=8.297 val_RMSE=13.987 mu_mean=-9.308 sigma_mean=6.463 sigma_p90=10.628 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37150, 'sRE4': 37157, 'sRE6': 37153, 'sRE7': 37148}, 'user': {6: 21465, 7: 21580, 1: 21080, 2: 20871, 4: 20617, 8: 21487, 5: 21508}, 'intf': {'w': 78051, 'wo': 70557}}
+[VAL] loss=3.833530  MAE=8.247  RMSE=13.899  abs_err(p50/p90/p99)=5.151/17.495/59.729
+[VAL][mu] mean=-8.477, std=34.308, min=-86.840, max=87.382, p50=-9.363, p90=36.440, p99=75.993
+[VAL][sigma] mean=6.383, std=4.269, min=2.935, max=87.734, p50=4.798, p90=11.117, p99=22.688
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 42] train_loss=2.237453 val_loss=3.833530 val_MAE=8.247 val_RMSE=13.899 mu_mean=-8.477 sigma_mean=6.383 sigma_p90=11.117 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37156, 'sRE5': 37143, 'sRE6': 37158, 'sRE4': 37151}, 'user': {7: 21578, 5: 21515, 8: 21487, 2: 20870, 1: 21079, 4: 20612, 6: 21467}, 'intf': {'w': 78048, 'wo': 70560}}
+[VAL] loss=3.919698  MAE=8.338  RMSE=14.082  abs_err(p50/p90/p99)=5.260/17.387/58.863
+[VAL][mu] mean=-9.997, std=35.401, min=-87.397, max=87.263, p50=-11.249, p90=37.449, p99=77.522
+[VAL][sigma] mean=6.072, std=3.824, min=2.852, max=81.563, p50=4.739, p90=10.423, p99=20.768
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 43] train_loss=2.205839 val_loss=3.919698 val_MAE=8.338 val_RMSE=14.082 mu_mean=-9.997 sigma_mean=6.072 sigma_p90=10.423 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37155, 'sRE7': 37146, 'sRE6': 37153, 'sRE4': 37154}, 'user': {5: 21514, 2: 20867, 1: 21078, 6: 21470, 8: 21487, 7: 21578, 4: 20614}, 'intf': {'wo': 70558, 'w': 78050}}
+[VAL] loss=4.170561  MAE=8.279  RMSE=13.984  abs_err(p50/p90/p99)=5.211/17.364/58.388
+[VAL][mu] mean=-8.874, std=34.898, min=-86.390, max=90.038, p50=-10.040, p90=37.679, p99=77.402
+[VAL][sigma] mean=5.804, std=3.630, min=2.621, max=79.271, p50=4.533, p90=9.918, p99=18.762
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 44] train_loss=2.166292 val_loss=4.170561 val_MAE=8.279 val_RMSE=13.984 mu_mean=-8.874 sigma_mean=5.804 sigma_p90=9.918 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37153, 'sRE4': 37147, 'sRE6': 37148, 'sRE5': 37160}, 'user': {8: 21484, 7: 21577, 4: 20616, 2: 20871, 5: 21518, 1: 21077, 6: 21465}, 'intf': {'w': 78050, 'wo': 70558}}
+[VAL] loss=4.390155  MAE=8.353  RMSE=14.056  abs_err(p50/p90/p99)=5.260/17.438/58.866
+[VAL][mu] mean=-9.372, std=34.594, min=-86.912, max=86.386, p50=-11.006, p90=36.736, p99=78.469
+[VAL][sigma] mean=5.591, std=3.334, min=2.592, max=84.481, p50=4.416, p90=9.497, p99=18.017
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 45] train_loss=2.135078 val_loss=4.390155 val_MAE=8.353 val_RMSE=14.056 mu_mean=-9.372 sigma_mean=5.591 sigma_p90=9.497 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37149, 'sRE4': 37154, 'sRE6': 37148, 'sRE5': 37157}, 'user': {1: 21074, 5: 21512, 8: 21485, 2: 20872, 6: 21468, 4: 20615, 7: 21582}, 'intf': {'wo': 70553, 'w': 78055}}
+[VAL] loss=4.493893  MAE=8.356  RMSE=14.084  abs_err(p50/p90/p99)=5.266/17.712/58.386
+[VAL][mu] mean=-10.230, std=35.236, min=-89.656, max=89.686, p50=-11.285, p90=36.307, p99=77.535
+[VAL][sigma] mean=5.587, std=3.623, min=2.464, max=77.472, p50=4.229, p90=10.139, p99=18.931
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 46] train_loss=2.104595 val_loss=4.493893 val_MAE=8.356 val_RMSE=14.084 mu_mean=-10.230 sigma_mean=5.587 sigma_p90=10.139 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37151, 'sRE6': 37156, 'sRE5': 37148, 'sRE4': 37153}, 'user': {6: 21466, 8: 21487, 1: 21077, 5: 21514, 7: 21581, 2: 20865, 4: 20618}, 'intf': {'w': 78047, 'wo': 70561}}
+[VAL] loss=4.750322  MAE=8.303  RMSE=14.054  abs_err(p50/p90/p99)=5.241/17.310/58.775
+[VAL][mu] mean=-9.028, std=34.942, min=-89.221, max=88.951, p50=-10.659, p90=38.003, p99=76.975
+[VAL][sigma] mean=5.136, std=3.040, min=2.334, max=47.965, p50=4.025, p90=9.032, p99=15.928
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 47] train_loss=2.070916 val_loss=4.750322 val_MAE=8.303 val_RMSE=14.054 mu_mean=-9.028 sigma_mean=5.136 sigma_p90=9.032 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37152, 'sRE7': 37146, 'sRE5': 37159, 'sRE4': 37151}, 'user': {2: 20871, 7: 21578, 6: 21468, 1: 21072, 4: 20616, 5: 21513, 8: 21490}, 'intf': {'wo': 70555, 'w': 78053}}
+[VAL] loss=4.885279  MAE=8.604  RMSE=14.288  abs_err(p50/p90/p99)=5.493/18.053/60.130
+[VAL][mu] mean=-11.245, std=34.763, min=-92.061, max=85.464, p50=-11.435, p90=34.020, p99=73.792
+[VAL][sigma] mean=5.365, std=3.278, min=2.294, max=62.241, p50=4.131, p90=9.721, p99=16.276
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 48] train_loss=2.038679 val_loss=4.885279 val_MAE=8.604 val_RMSE=14.288 mu_mean=-11.245 sigma_mean=5.365 sigma_p90=9.721 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37149, 'sRE6': 37157, 'sRE7': 37152, 'sRE5': 37150}, 'user': {1: 21080, 6: 21471, 8: 21488, 2: 20866, 4: 20610, 5: 21509, 7: 21584}, 'intf': {'w': 78047, 'wo': 70561}}
+[VAL] loss=5.160028  MAE=8.515  RMSE=14.252  abs_err(p50/p90/p99)=5.392/17.842/60.943
+[VAL][mu] mean=-8.692, std=35.368, min=-88.548, max=86.158, p50=-9.653, p90=38.916, p99=76.261
+[VAL][sigma] mean=5.036, std=3.016, min=2.185, max=78.362, p50=3.946, p90=8.841, p99=15.340
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 49] train_loss=2.014974 val_loss=5.160028 val_MAE=8.515 val_RMSE=14.252 mu_mean=-8.692 sigma_mean=5.036 sigma_p90=8.841 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37160, 'sRE7': 37151, 'sRE6': 37137, 'sRE5': 37160}, 'user': {8: 21488, 4: 20611, 5: 21511, 6: 21469, 1: 21080, 2: 20865, 7: 21584}, 'intf': {'w': 78052, 'wo': 70556}}
+[VAL] loss=5.303887  MAE=8.427  RMSE=14.141  abs_err(p50/p90/p99)=5.307/17.654/59.119
+[VAL][mu] mean=-9.576, std=34.402, min=-88.247, max=88.557, p50=-10.979, p90=35.380, p99=75.833
+[VAL][sigma] mean=4.959, std=3.047, min=2.086, max=51.384, p50=3.768, p90=9.131, p99=14.993
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 50] train_loss=1.983895 val_loss=5.303887 val_MAE=8.427 val_RMSE=14.141 mu_mean=-9.576 sigma_mean=4.959 sigma_p90=9.131 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37154, 'sRE6': 37144, 'sRE4': 37149, 'sRE7': 37161}, 'user': {5: 21517, 1: 21073, 8: 21484, 7: 21582, 6: 21470, 4: 20615, 2: 20867}, 'intf': {'wo': 70567, 'w': 78041}}
+[VAL] loss=5.527033  MAE=8.470  RMSE=14.311  abs_err(p50/p90/p99)=5.370/17.650/59.790
+[VAL][mu] mean=-10.542, std=35.248, min=-89.318, max=86.567, p50=-11.769, p90=36.751, p99=75.543
+[VAL][sigma] mean=4.771, std=2.966, min=1.993, max=53.345, p50=3.619, p90=8.624, p99=14.929
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 51] train_loss=1.960909 val_loss=5.527033 val_MAE=8.470 val_RMSE=14.311 mu_mean=-10.542 sigma_mean=4.771 sigma_p90=8.624 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37152, 'sRE6': 37153, 'sRE5': 37155, 'sRE4': 37148}, 'user': {4: 20614, 6: 21466, 7: 21579, 5: 21511, 1: 21083, 8: 21482, 2: 20873}, 'intf': {'wo': 70556, 'w': 78052}}
+[VAL] loss=5.824909  MAE=8.455  RMSE=14.241  abs_err(p50/p90/p99)=5.287/17.930/59.458
+[VAL][mu] mean=-8.868, std=35.879, min=-89.079, max=92.015, p50=-10.546, p90=39.422, p99=80.101
+[VAL][sigma] mean=4.708, std=2.993, min=1.920, max=56.946, p50=3.519, p90=9.006, p99=14.479
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 52] train_loss=1.931319 val_loss=5.824909 val_MAE=8.455 val_RMSE=14.241 mu_mean=-8.868 sigma_mean=4.708 sigma_p90=9.006 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37148, 'sRE4': 37155, 'sRE6': 37152, 'sRE5': 37153}, 'user': {8: 21485, 5: 21512, 7: 21580, 2: 20868, 6: 21471, 1: 21081, 4: 20611}, 'intf': {'w': 78058, 'wo': 70550}}
+[VAL] loss=6.107154  MAE=8.379  RMSE=14.130  abs_err(p50/p90/p99)=5.227/17.671/58.839
+[VAL][mu] mean=-9.586, std=34.318, min=-87.863, max=88.678, p50=-10.704, p90=35.634, p99=75.797
+[VAL][sigma] mean=4.591, std=2.858, min=1.891, max=47.307, p50=3.463, p90=8.808, p99=13.716
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 53] train_loss=1.903499 val_loss=6.107154 val_MAE=8.379 val_RMSE=14.130 mu_mean=-9.586 sigma_mean=4.591 sigma_p90=8.808 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37153, 'sRE6': 37147, 'sRE5': 37154, 'sRE4': 37154}, 'user': {7: 21581, 1: 21077, 5: 21512, 2: 20865, 4: 20614, 8: 21491, 6: 21468}, 'intf': {'wo': 70553, 'w': 78055}}
+[VAL] loss=6.153351  MAE=8.485  RMSE=14.311  abs_err(p50/p90/p99)=5.288/18.021/59.395
+[VAL][mu] mean=-9.870, std=35.339, min=-89.521, max=88.627, p50=-10.692, p90=35.661, p99=78.557
+[VAL][sigma] mean=4.663, std=2.940, min=1.842, max=36.365, p50=3.450, p90=9.289, p99=13.560
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 54] train_loss=1.888515 val_loss=6.153351 val_MAE=8.485 val_RMSE=14.311 mu_mean=-9.870 sigma_mean=4.663 sigma_p90=9.289 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37154, 'sRE4': 37151, 'sRE6': 37149, 'sRE7': 37154}, 'user': {1: 21074, 4: 20614, 2: 20866, 6: 21469, 7: 21584, 5: 21515, 8: 21486}, 'intf': {'wo': 70561, 'w': 78047}}
+[VAL] loss=6.551550  MAE=8.463  RMSE=14.256  abs_err(p50/p90/p99)=5.310/17.982/59.763
+[VAL][mu] mean=-9.964, std=34.496, min=-89.426, max=84.738, p50=-10.981, p90=35.512, p99=76.210
+[VAL][sigma] mean=4.422, std=2.740, min=1.760, max=50.061, p50=3.325, p90=8.572, p99=12.901
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 55] train_loss=1.867356 val_loss=6.551550 val_MAE=8.463 val_RMSE=14.256 mu_mean=-9.964 sigma_mean=4.422 sigma_p90=8.572 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37159, 'sRE4': 37151, 'sRE5': 37151, 'sRE6': 37147}, 'user': {4: 20615, 1: 21075, 6: 21466, 5: 21515, 7: 21582, 2: 20870, 8: 21485}, 'intf': {'wo': 70555, 'w': 78053}}
+[VAL] loss=6.489084  MAE=8.444  RMSE=14.145  abs_err(p50/p90/p99)=5.344/17.853/60.023
+[VAL][mu] mean=-9.368, std=34.858, min=-90.753, max=89.504, p50=-10.484, p90=36.561, p99=77.342
+[VAL][sigma] mean=4.501, std=2.907, min=1.737, max=53.649, p50=3.345, p90=8.811, p99=13.371
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 56] train_loss=1.841345 val_loss=6.489084 val_MAE=8.444 val_RMSE=14.145 mu_mean=-9.368 sigma_mean=4.501 sigma_p90=8.811 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37149, 'sRE4': 37153, 'sRE6': 37151, 'sRE7': 37155}, 'user': {1: 21074, 6: 21470, 5: 21518, 4: 20611, 2: 20873, 8: 21484, 7: 21578}, 'intf': {'wo': 70561, 'w': 78047}}
+[VAL] loss=7.182203  MAE=8.391  RMSE=14.132  abs_err(p50/p90/p99)=5.258/17.665/59.366
+[VAL][mu] mean=-9.779, std=34.190, min=-87.534, max=89.237, p50=-10.471, p90=35.139, p99=75.582
+[VAL][sigma] mean=4.162, std=2.510, min=1.636, max=31.951, p50=3.167, p90=8.122, p99=11.683
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 57] train_loss=1.819500 val_loss=7.182203 val_MAE=8.391 val_RMSE=14.132 mu_mean=-9.779 sigma_mean=4.162 sigma_p90=8.122 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37155, 'sRE5': 37154, 'sRE4': 37154, 'sRE7': 37145}, 'user': {2: 20866, 4: 20617, 8: 21487, 1: 21081, 6: 21467, 7: 21577, 5: 21513}, 'intf': {'wo': 70555, 'w': 78053}}
+[VAL] loss=7.279353  MAE=8.371  RMSE=14.101  abs_err(p50/p90/p99)=5.203/17.766/58.886
+[VAL][mu] mean=-10.063, std=34.638, min=-91.459, max=88.032, p50=-11.050, p90=35.217, p99=76.572
+[VAL][sigma] mean=4.204, std=2.792, min=1.557, max=54.805, p50=3.110, p90=8.372, p99=12.726
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 58] train_loss=1.805689 val_loss=7.279353 val_MAE=8.371 val_RMSE=14.101 mu_mean=-10.063 sigma_mean=4.204 sigma_p90=8.372 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37158, 'sRE6': 37148, 'sRE7': 37154, 'sRE5': 37148}, 'user': {5: 21518, 7: 21585, 6: 21465, 4: 20617, 8: 21483, 1: 21074, 2: 20866}, 'intf': {'wo': 70570, 'w': 78038}}
+[VAL] loss=8.047259  MAE=8.415  RMSE=14.150  abs_err(p50/p90/p99)=5.285/17.716/59.897
+[VAL][mu] mean=-9.826, std=34.480, min=-89.774, max=91.844, p50=-10.929, p90=36.058, p99=76.361
+[VAL][sigma] mean=3.914, std=2.268, min=1.501, max=22.423, p50=3.059, p90=7.488, p99=10.536
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 59] train_loss=1.783245 val_loss=8.047259 val_MAE=8.415 val_RMSE=14.150 mu_mean=-9.826 sigma_mean=3.914 sigma_p90=7.488 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37151, 'sRE5': 37154, 'sRE6': 37155, 'sRE4': 37148}, 'user': {8: 21484, 6: 21465, 2: 20868, 5: 21512, 1: 21077, 4: 20616, 7: 21586}, 'intf': {'w': 78046, 'wo': 70562}}
+[VAL] loss=7.957089  MAE=8.445  RMSE=14.173  abs_err(p50/p90/p99)=5.274/17.872/58.485
+[VAL][mu] mean=-9.361, std=35.228, min=-90.819, max=89.794, p50=-11.122, p90=37.556, p99=78.874
+[VAL][sigma] mean=4.027, std=2.503, min=1.429, max=33.065, p50=3.092, p90=7.998, p99=11.184
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 60] train_loss=1.761512 val_loss=7.957089 val_MAE=8.445 val_RMSE=14.173 mu_mean=-9.361 sigma_mean=4.027 sigma_p90=7.998 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37152, 'sRE7': 37148, 'sRE5': 37148, 'sRE6': 37160}, 'user': {4: 20616, 1: 21080, 5: 21516, 2: 20862, 8: 21487, 7: 21583, 6: 21464}, 'intf': {'wo': 70560, 'w': 78048}}
+[VAL] loss=8.618948  MAE=8.330  RMSE=14.094  abs_err(p50/p90/p99)=5.194/17.444/59.697
+[VAL][mu] mean=-9.416, std=33.960, min=-87.451, max=87.068, p50=-10.579, p90=36.107, p99=75.030
+[VAL][sigma] mean=3.745, std=2.257, min=1.365, max=33.335, p50=2.897, p90=7.250, p99=9.916
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 61] train_loss=1.746686 val_loss=8.618948 val_MAE=8.330 val_RMSE=14.094 mu_mean=-9.416 sigma_mean=3.745 sigma_p90=7.250 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37154, 'sRE6': 37150, 'sRE4': 37149, 'sRE7': 37155}, 'user': {1: 21081, 7: 21579, 6: 21467, 8: 21479, 5: 21510, 2: 20873, 4: 20619}, 'intf': {'wo': 70560, 'w': 78048}}
+[VAL] loss=8.655598  MAE=8.410  RMSE=14.182  abs_err(p50/p90/p99)=5.283/17.604/59.477
+[VAL][mu] mean=-9.345, std=34.739, min=-87.824, max=90.822, p50=-10.920, p90=36.331, p99=79.003
+[VAL][sigma] mean=3.965, std=2.539, min=1.279, max=28.051, p50=3.044, p90=7.906, p99=11.309
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 62] train_loss=1.731161 val_loss=8.655598 val_MAE=8.410 val_RMSE=14.182 mu_mean=-9.345 sigma_mean=3.965 sigma_p90=7.906 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37155, 'sRE7': 37144, 'sRE6': 37152, 'sRE5': 37157}, 'user': {6: 21466, 1: 21079, 5: 21512, 7: 21586, 2: 20865, 8: 21488, 4: 20612}, 'intf': {'w': 78050, 'wo': 70558}}
+[VAL] loss=8.916431  MAE=8.457  RMSE=14.204  abs_err(p50/p90/p99)=5.326/17.882/57.941
+[VAL][mu] mean=-9.755, std=35.087, min=-92.403, max=93.988, p50=-10.447, p90=35.226, p99=79.327
+[VAL][sigma] mean=3.858, std=2.403, min=1.238, max=27.191, p50=3.021, p90=7.644, p99=10.712
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 63] train_loss=1.703881 val_loss=8.916431 val_MAE=8.457 val_RMSE=14.204 mu_mean=-9.755 sigma_mean=3.858 sigma_p90=7.644 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37150, 'sRE6': 37144, 'sRE4': 37158, 'sRE7': 37156}, 'user': {4: 20613, 5: 21510, 7: 21582, 1: 21079, 8: 21484, 6: 21468, 2: 20872}, 'intf': {'w': 78046, 'wo': 70562}}
+[VAL] loss=8.797817  MAE=8.346  RMSE=14.121  abs_err(p50/p90/p99)=5.218/17.510/59.817
+[VAL][mu] mean=-9.962, std=34.978, min=-89.619, max=88.950, p50=-11.245, p90=36.640, p99=76.042
+[VAL][sigma] mean=3.835, std=2.324, min=1.228, max=27.471, p50=3.075, p90=7.469, p99=10.207
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 64] train_loss=1.691847 val_loss=8.797817 val_MAE=8.346 val_RMSE=14.121 mu_mean=-9.962 sigma_mean=3.835 sigma_p90=7.469 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37155, 'sRE5': 37155, 'sRE4': 37150, 'sRE6': 37148}, 'user': {4: 20612, 7: 21579, 8: 21493, 6: 21468, 5: 21512, 1: 21076, 2: 20868}, 'intf': {'wo': 70551, 'w': 78057}}
+[VAL] loss=9.578614  MAE=8.397  RMSE=14.071  abs_err(p50/p90/p99)=5.277/17.592/58.466
+[VAL][mu] mean=-9.708, std=35.058, min=-87.942, max=90.308, p50=-11.180, p90=36.518, p99=78.896
+[VAL][sigma] mean=3.685, std=2.210, min=1.173, max=22.094, p50=2.959, p90=7.125, p99=9.996
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 65] train_loss=1.677197 val_loss=9.578614 val_MAE=8.397 val_RMSE=14.071 mu_mean=-9.708 sigma_mean=3.685 sigma_p90=7.125 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37155, 'sRE5': 37147, 'sRE4': 37157, 'sRE7': 37149}, 'user': {2: 20867, 8: 21488, 7: 21583, 6: 21469, 4: 20613, 5: 21510, 1: 21078}, 'intf': {'wo': 70553, 'w': 78055}}
+[VAL] loss=10.340991  MAE=8.398  RMSE=14.158  abs_err(p50/p90/p99)=5.291/17.647/58.948
+[VAL][mu] mean=-9.873, std=34.631, min=-88.126, max=89.167, p50=-10.818, p90=34.491, p99=77.450
+[VAL][sigma] mean=3.624, std=2.249, min=1.100, max=28.213, p50=2.901, p90=7.067, p99=10.322
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 66] train_loss=1.658489 val_loss=10.340991 val_MAE=8.398 val_RMSE=14.158 mu_mean=-9.873 sigma_mean=3.624 sigma_p90=7.067 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37154, 'sRE4': 37154, 'sRE6': 37148, 'sRE5': 37152}, 'user': {1: 21079, 4: 20616, 6: 21467, 8: 21485, 5: 21514, 7: 21575, 2: 20872}, 'intf': {'w': 78045, 'wo': 70563}}
+[VAL] loss=10.989040  MAE=8.386  RMSE=14.128  abs_err(p50/p90/p99)=5.261/17.682/59.608
+[VAL][mu] mean=-9.949, std=34.374, min=-91.614, max=86.575, p50=-10.764, p90=34.553, p99=75.646
+[VAL][sigma] mean=3.534, std=2.176, min=1.041, max=22.082, p50=2.782, p90=6.967, p99=9.320
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 67] train_loss=1.647425 val_loss=10.989040 val_MAE=8.386 val_RMSE=14.128 mu_mean=-9.949 sigma_mean=3.534 sigma_p90=6.967 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37156, 'sRE7': 37149, 'sRE6': 37152, 'sRE4': 37151}, 'user': {2: 20872, 6: 21462, 5: 21515, 1: 21081, 4: 20614, 8: 21485, 7: 21579}, 'intf': {'w': 78040, 'wo': 70568}}
+[VAL] loss=10.646011  MAE=8.402  RMSE=14.128  abs_err(p50/p90/p99)=5.284/17.768/59.958
+[VAL][mu] mean=-9.530, std=34.855, min=-90.569, max=89.390, p50=-10.329, p90=35.892, p99=77.057
+[VAL][sigma] mean=3.565, std=2.140, min=1.024, max=24.991, p50=2.920, p90=6.902, p99=9.125
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 68] train_loss=1.634840 val_loss=10.646011 val_MAE=8.402 val_RMSE=14.128 mu_mean=-9.530 sigma_mean=3.565 sigma_p90=6.902 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37151, 'sRE5': 37149, 'sRE6': 37152, 'sRE4': 37156}, 'user': {6: 21463, 1: 21076, 2: 20873, 4: 20616, 5: 21513, 8: 21487, 7: 21580}, 'intf': {'w': 78047, 'wo': 70561}}
+[VAL] loss=11.290052  MAE=8.366  RMSE=14.043  abs_err(p50/p90/p99)=5.276/17.638/58.869
+[VAL][mu] mean=-9.227, std=34.704, min=-89.039, max=87.482, p50=-9.951, p90=36.330, p99=76.865
+[VAL][sigma] mean=3.551, std=2.189, min=0.960, max=23.420, p50=2.877, p90=6.970, p99=9.287
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 69] train_loss=1.615420 val_loss=11.290052 val_MAE=8.366 val_RMSE=14.043 mu_mean=-9.227 sigma_mean=3.551 sigma_p90=6.970 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37151, 'sRE4': 37155, 'sRE7': 37150, 'sRE5': 37152}, 'user': {7: 21584, 6: 21467, 1: 21079, 8: 21483, 4: 20611, 5: 21509, 2: 20875}, 'intf': {'wo': 70558, 'w': 78050}}
+[VAL] loss=11.263328  MAE=8.353  RMSE=14.115  abs_err(p50/p90/p99)=5.195/17.563/58.812
+[VAL][mu] mean=-9.746, std=34.824, min=-89.918, max=87.471, p50=-10.704, p90=36.042, p99=76.716
+[VAL][sigma] mean=3.489, std=2.111, min=0.958, max=20.876, p50=2.871, p90=6.738, p99=9.278
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 70] train_loss=1.603271 val_loss=11.263328 val_MAE=8.353 val_RMSE=14.115 mu_mean=-9.746 sigma_mean=3.489 sigma_p90=6.738 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37154, 'sRE6': 37147, 'sRE7': 37153, 'sRE5': 37154}, 'user': {7: 21583, 5: 21514, 4: 20612, 6: 21465, 1: 21079, 2: 20867, 8: 21488}, 'intf': {'wo': 70563, 'w': 78045}}
+[VAL] loss=12.188450  MAE=8.384  RMSE=14.110  abs_err(p50/p90/p99)=5.289/17.589/58.647
+[VAL][mu] mean=-9.885, std=34.773, min=-90.808, max=90.083, p50=-11.192, p90=36.319, p99=76.859
+[VAL][sigma] mean=3.337, std=1.964, min=0.927, max=19.333, p50=2.811, p90=6.308, p99=8.898
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 71] train_loss=1.587689 val_loss=12.188450 val_MAE=8.384 val_RMSE=14.110 mu_mean=-9.885 sigma_mean=3.337 sigma_p90=6.308 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37160, 'sRE6': 37144, 'sRE7': 37153, 'sRE5': 37151}, 'user': {5: 21513, 7: 21577, 2: 20869, 4: 20615, 8: 21487, 6: 21466, 1: 21081}, 'intf': {'wo': 70562, 'w': 78046}}
+[VAL] loss=12.599692  MAE=8.342  RMSE=13.998  abs_err(p50/p90/p99)=5.271/17.600/58.894
+[VAL][mu] mean=-9.776, std=34.400, min=-91.077, max=87.887, p50=-10.891, p90=35.765, p99=75.234
+[VAL][sigma] mean=3.351, std=2.015, min=0.898, max=16.317, p50=2.763, p90=6.453, p99=8.668
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 72] train_loss=1.575649 val_loss=12.599692 val_MAE=8.342 val_RMSE=13.998 mu_mean=-9.776 sigma_mean=3.351 sigma_p90=6.453 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37151, 'sRE6': 37151, 'sRE4': 37150, 'sRE5': 37156}, 'user': {8: 21483, 6: 21467, 1: 21076, 2: 20870, 5: 21515, 7: 21584, 4: 20613}, 'intf': {'w': 78050, 'wo': 70558}}
+[VAL] loss=12.764706  MAE=8.378  RMSE=14.087  abs_err(p50/p90/p99)=5.263/17.634/59.188
+[VAL][mu] mean=-9.854, std=34.855, min=-91.880, max=88.143, p50=-11.030, p90=35.551, p99=77.676
+[VAL][sigma] mean=3.390, std=2.074, min=0.844, max=18.045, p50=2.803, p90=6.584, p99=8.892
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 73] train_loss=1.558750 val_loss=12.764706 val_MAE=8.378 val_RMSE=14.087 mu_mean=-9.854 sigma_mean=3.390 sigma_p90=6.584 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37152, 'sRE6': 37152, 'sRE4': 37155, 'sRE7': 37149}, 'user': {6: 21461, 4: 20617, 7: 21584, 1: 21079, 5: 21518, 2: 20866, 8: 21483}, 'intf': {'w': 78041, 'wo': 70567}}
+[VAL] loss=14.007946  MAE=8.310  RMSE=14.038  abs_err(p50/p90/p99)=5.220/17.434/58.331
+[VAL][mu] mean=-9.303, std=34.268, min=-88.656, max=88.887, p50=-10.513, p90=36.063, p99=76.943
+[VAL][sigma] mean=3.238, std=1.975, min=0.803, max=15.426, p50=2.708, p90=6.191, p99=9.004
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 74] train_loss=1.549705 val_loss=14.007946 val_MAE=8.310 val_RMSE=14.038 mu_mean=-9.303 sigma_mean=3.238 sigma_p90=6.191 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37147, 'sRE4': 37158, 'sRE6': 37153, 'sRE7': 37150}, 'user': {6: 21469, 7: 21580, 4: 20619, 2: 20865, 5: 21514, 1: 21073, 8: 21488}, 'intf': {'w': 78051, 'wo': 70557}}
+[VAL] loss=13.600461  MAE=8.376  RMSE=14.094  abs_err(p50/p90/p99)=5.230/17.726/58.845
+[VAL][mu] mean=-9.651, std=34.790, min=-93.662, max=87.803, p50=-10.603, p90=35.707, p99=77.200
+[VAL][sigma] mean=3.351, std=2.071, min=0.798, max=15.763, p50=2.779, p90=6.551, p99=8.858
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 75] train_loss=1.539174 val_loss=13.600461 val_MAE=8.376 val_RMSE=14.094 mu_mean=-9.651 sigma_mean=3.351 sigma_p90=6.551 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37152, 'sRE4': 37153, 'sRE7': 37152, 'sRE5': 37151}, 'user': {6: 21472, 7: 21586, 1: 21075, 4: 20616, 5: 21508, 8: 21484, 2: 20867}, 'intf': {'w': 78052, 'wo': 70556}}
+[VAL] loss=14.593198  MAE=8.372  RMSE=14.111  abs_err(p50/p90/p99)=5.223/17.732/59.792
+[VAL][mu] mean=-9.563, std=35.144, min=-91.440, max=89.572, p50=-10.493, p90=36.125, p99=78.479
+[VAL][sigma] mean=3.237, std=1.990, min=0.765, max=14.958, p50=2.730, p90=6.284, p99=8.666
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 76] train_loss=1.527525 val_loss=14.593198 val_MAE=8.372 val_RMSE=14.111 mu_mean=-9.563 sigma_mean=3.237 sigma_p90=6.284 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37151, 'sRE6': 37157, 'sRE4': 37151, 'sRE7': 37149}, 'user': {8: 21486, 4: 20615, 7: 21580, 6: 21468, 5: 21516, 1: 21078, 2: 20865}, 'intf': {'w': 78047, 'wo': 70561}}
+[VAL] loss=15.053583  MAE=8.328  RMSE=14.021  abs_err(p50/p90/p99)=5.205/17.568/58.272
+[VAL][mu] mean=-9.185, std=34.536, min=-92.118, max=88.834, p50=-10.443, p90=35.868, p99=77.483
+[VAL][sigma] mean=3.225, std=2.023, min=0.738, max=15.050, p50=2.655, p90=6.318, p99=8.840
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 77] train_loss=1.515824 val_loss=15.053583 val_MAE=8.328 val_RMSE=14.021 mu_mean=-9.185 sigma_mean=3.225 sigma_p90=6.318 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37148, 'sRE5': 37156, 'sRE7': 37150, 'sRE4': 37154}, 'user': {4: 20615, 1: 21076, 6: 21463, 5: 21514, 7: 21581, 2: 20870, 8: 21489}, 'intf': {'w': 78045, 'wo': 70563}}
+[VAL] loss=15.673306  MAE=8.305  RMSE=14.047  abs_err(p50/p90/p99)=5.206/17.474/58.663
+[VAL][mu] mean=-9.674, std=34.439, min=-92.439, max=87.969, p50=-10.496, p90=34.922, p99=76.569
+[VAL][sigma] mean=3.184, std=1.994, min=0.729, max=16.171, p50=2.645, p90=6.175, p99=8.844
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 78] train_loss=1.504237 val_loss=15.673306 val_MAE=8.305 val_RMSE=14.047 mu_mean=-9.674 sigma_mean=3.184 sigma_p90=6.175 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37151, 'sRE5': 37154, 'sRE7': 37157, 'sRE6': 37146}, 'user': {4: 20615, 8: 21482, 7: 21585, 5: 21512, 1: 21076, 6: 21461, 2: 20877}, 'intf': {'wo': 70561, 'w': 78047}}
+[VAL] loss=15.876873  MAE=8.368  RMSE=14.104  abs_err(p50/p90/p99)=5.238/17.613/59.858
+[VAL][mu] mean=-9.608, std=35.050, min=-92.155, max=88.787, p50=-10.741, p90=36.121, p99=78.810
+[VAL][sigma] mean=3.206, std=2.009, min=0.708, max=13.030, p50=2.695, p90=6.254, p99=8.759
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 79] train_loss=1.493497 val_loss=15.876873 val_MAE=8.368 val_RMSE=14.104 mu_mean=-9.608 sigma_mean=3.206 sigma_p90=6.254 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37153, 'sRE6': 37149, 'sRE4': 37154, 'sRE5': 37152}, 'user': {7: 21583, 8: 21485, 1: 21077, 4: 20610, 5: 21519, 2: 20872, 6: 21462}, 'intf': {'wo': 70561, 'w': 78047}}
+[VAL] loss=16.558942  MAE=8.327  RMSE=14.046  abs_err(p50/p90/p99)=5.231/17.478/58.981
+[VAL][mu] mean=-9.666, std=34.863, min=-92.253, max=88.580, p50=-10.830, p90=35.570, p99=78.177
+[VAL][sigma] mean=3.147, std=1.993, min=0.689, max=15.371, p50=2.617, p90=6.129, p99=8.764
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 80] train_loss=1.485740 val_loss=16.558942 val_MAE=8.327 val_RMSE=14.046 mu_mean=-9.666 sigma_mean=3.147 sigma_p90=6.129 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37146, 'sRE7': 37148, 'sRE4': 37150, 'sRE6': 37164}, 'user': {2: 20871, 8: 21484, 6: 21472, 1: 21079, 7: 21583, 5: 21510, 4: 20609}, 'intf': {'wo': 70557, 'w': 78051}}
+[VAL] loss=16.869974  MAE=8.352  RMSE=14.059  abs_err(p50/p90/p99)=5.250/17.512/59.251
+[VAL][mu] mean=-9.825, std=34.536, min=-92.032, max=88.464, p50=-11.122, p90=35.389, p99=76.520
+[VAL][sigma] mean=3.133, std=1.970, min=0.672, max=13.579, p50=2.611, p90=6.099, p99=8.459
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 81] train_loss=1.475214 val_loss=16.869974 val_MAE=8.352 val_RMSE=14.059 mu_mean=-9.825 sigma_mean=3.133 sigma_p90=6.099 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37154, 'sRE4': 37155, 'sRE7': 37148, 'sRE5': 37151}, 'user': {7: 21582, 8: 21489, 1: 21074, 2: 20869, 6: 21468, 4: 20613, 5: 21513}, 'intf': {'wo': 70559, 'w': 78049}}
+[VAL] loss=18.437983  MAE=8.326  RMSE=14.064  abs_err(p50/p90/p99)=5.208/17.474/59.460
+[VAL][mu] mean=-9.272, std=34.721, min=-92.459, max=88.232, p50=-10.484, p90=36.265, p99=77.425
+[VAL][sigma] mean=3.087, std=1.970, min=0.634, max=13.227, p50=2.551, p90=6.065, p99=8.321
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 82] train_loss=1.463049 val_loss=18.437983 val_MAE=8.326 val_RMSE=14.064 mu_mean=-9.272 sigma_mean=3.087 sigma_p90=6.065 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37155, 'sRE6': 37150, 'sRE5': 37149, 'sRE7': 37154}, 'user': {7: 21581, 2: 20868, 6: 21467, 8: 21489, 4: 20608, 5: 21514, 1: 21081}, 'intf': {'wo': 70561, 'w': 78047}}
+[VAL] loss=17.222899  MAE=8.357  RMSE=14.084  abs_err(p50/p90/p99)=5.213/17.609/58.776
+[VAL][mu] mean=-9.508, std=35.005, min=-92.017, max=88.902, p50=-10.616, p90=36.179, p99=78.395
+[VAL][sigma] mean=3.169, std=2.003, min=0.639, max=13.613, p50=2.722, p90=6.184, p99=8.624
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 83] train_loss=1.457398 val_loss=17.222899 val_MAE=8.357 val_RMSE=14.084 mu_mean=-9.508 sigma_mean=3.169 sigma_p90=6.184 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37149, 'sRE6': 37152, 'sRE7': 37153, 'sRE5': 37154}, 'user': {6: 21461, 4: 20613, 1: 21075, 7: 21586, 5: 21515, 2: 20870, 8: 21488}, 'intf': {'w': 78043, 'wo': 70565}}
+[VAL] loss=19.388623  MAE=8.312  RMSE=14.012  abs_err(p50/p90/p99)=5.222/17.555/58.608
+[VAL][mu] mean=-9.392, std=34.743, min=-91.341, max=88.615, p50=-10.584, p90=35.874, p99=77.900
+[VAL][sigma] mean=3.040, std=1.981, min=0.608, max=12.513, p50=2.476, p90=6.024, p99=8.524
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 84] train_loss=1.449807 val_loss=19.388623 val_MAE=8.312 val_RMSE=14.012 mu_mean=-9.392 sigma_mean=3.040 sigma_p90=6.024 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37155, 'sRE7': 37154, 'sRE4': 37150, 'sRE5': 37149}, 'user': {7: 21583, 1: 21079, 4: 20610, 6: 21467, 5: 21514, 8: 21486, 2: 20869}, 'intf': {'wo': 70555, 'w': 78053}}
+[VAL] loss=19.229244  MAE=8.345  RMSE=14.076  abs_err(p50/p90/p99)=5.214/17.597/58.973
+[VAL][mu] mean=-9.656, std=34.785, min=-93.223, max=88.561, p50=-10.626, p90=35.633, p99=77.759
+[VAL][sigma] mean=3.083, std=1.991, min=0.592, max=13.039, p50=2.569, p90=6.071, p99=8.464
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 85] train_loss=1.445918 val_loss=19.229244 val_MAE=8.345 val_RMSE=14.076 mu_mean=-9.656 sigma_mean=3.083 sigma_p90=6.071 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37153, 'sRE4': 37154, 'sRE5': 37152, 'sRE7': 37149}, 'user': {4: 20614, 2: 20867, 7: 21580, 1: 21080, 6: 21466, 5: 21517, 8: 21484}, 'intf': {'wo': 70563, 'w': 78045}}
+[VAL] loss=19.984387  MAE=8.330  RMSE=14.040  abs_err(p50/p90/p99)=5.209/17.467/58.946
+[VAL][mu] mean=-9.520, std=34.450, min=-91.715, max=87.640, p50=-10.545, p90=35.239, p99=76.627
+[VAL][sigma] mean=3.011, std=1.927, min=0.581, max=12.569, p50=2.531, p90=5.898, p99=8.180
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 86] train_loss=1.435711 val_loss=19.984387 val_MAE=8.330 val_RMSE=14.040 mu_mean=-9.520 sigma_mean=3.011 sigma_p90=5.898 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37151, 'sRE6': 37148, 'sRE7': 37154, 'sRE4': 37155}, 'user': {5: 21513, 7: 21585, 2: 20864, 6: 21464, 8: 21487, 4: 20614, 1: 21081}, 'intf': {'w': 78051, 'wo': 70557}}
+[VAL] loss=20.684582  MAE=8.333  RMSE=14.038  abs_err(p50/p90/p99)=5.215/17.506/59.047
+[VAL][mu] mean=-9.495, std=34.511, min=-91.933, max=88.086, p50=-10.608, p90=35.377, p99=77.239
+[VAL][sigma] mean=3.003, std=1.943, min=0.566, max=12.075, p50=2.521, p90=5.874, p99=8.480
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 87] train_loss=1.427833 val_loss=20.684582 val_MAE=8.333 val_RMSE=14.038 mu_mean=-9.495 sigma_mean=3.003 sigma_p90=5.874 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37148, 'sRE4': 37155, 'sRE5': 37154, 'sRE7': 37151}, 'user': {7: 21584, 1: 21072, 2: 20869, 8: 21488, 6: 21465, 4: 20619, 5: 21511}, 'intf': {'w': 78050, 'wo': 70558}}
+[VAL] loss=20.616958  MAE=8.336  RMSE=14.036  abs_err(p50/p90/p99)=5.214/17.595/59.054
+[VAL][mu] mean=-9.653, std=34.653, min=-92.448, max=88.221, p50=-10.573, p90=35.363, p99=76.766
+[VAL][sigma] mean=3.034, std=1.958, min=0.551, max=11.707, p50=2.547, p90=5.980, p99=8.185
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 88] train_loss=1.422573 val_loss=20.616958 val_MAE=8.336 val_RMSE=14.036 mu_mean=-9.653 sigma_mean=3.034 sigma_p90=5.980 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37150, 'sRE6': 37151, 'sRE5': 37157, 'sRE7': 37150}, 'user': {1: 21074, 7: 21585, 8: 21487, 5: 21514, 2: 20865, 4: 20612, 6: 21471}, 'intf': {'wo': 70553, 'w': 78055}}
+[VAL] loss=22.031196  MAE=8.311  RMSE=14.016  abs_err(p50/p90/p99)=5.193/17.521/58.585
+[VAL][mu] mean=-9.452, std=34.564, min=-91.951, max=88.428, p50=-10.336, p90=35.597, p99=77.065
+[VAL][sigma] mean=2.955, std=1.919, min=0.530, max=11.745, p50=2.470, p90=5.822, p99=8.091
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 89] train_loss=1.417737 val_loss=22.031196 val_MAE=8.311 val_RMSE=14.016 mu_mean=-9.452 sigma_mean=2.955 sigma_p90=5.822 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37154, 'sRE5': 37145, 'sRE7': 37152, 'sRE4': 37157}, 'user': {6: 21463, 7: 21585, 2: 20867, 5: 21516, 1: 21081, 4: 20611, 8: 21485}, 'intf': {'w': 78039, 'wo': 70569}}
+[VAL] loss=22.521878  MAE=8.320  RMSE=14.006  abs_err(p50/p90/p99)=5.239/17.537/58.749
+[VAL][mu] mean=-9.510, std=34.440, min=-91.784, max=88.193, p50=-10.536, p90=35.441, p99=76.663
+[VAL][sigma] mean=2.955, std=1.938, min=0.520, max=11.307, p50=2.448, p90=5.853, p99=8.174
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 90] train_loss=1.410775 val_loss=22.521878 val_MAE=8.320 val_RMSE=14.006 mu_mean=-9.510 sigma_mean=2.955 sigma_p90=5.853 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37151, 'sRE6': 37154, 'sRE5': 37148, 'sRE4': 37155}, 'user': {1: 21082, 7: 21585, 2: 20867, 4: 20614, 8: 21488, 6: 21467, 5: 21505}, 'intf': {'wo': 70560, 'w': 78048}}
+[VAL] loss=22.140566  MAE=8.329  RMSE=14.031  abs_err(p50/p90/p99)=5.223/17.564/59.095
+[VAL][mu] mean=-9.470, std=34.640, min=-92.822, max=88.541, p50=-10.587, p90=35.740, p99=77.387
+[VAL][sigma] mean=2.967, std=1.921, min=0.521, max=11.376, p50=2.522, p90=5.822, p99=8.199
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 91] train_loss=1.402533 val_loss=22.140566 val_MAE=8.329 val_RMSE=14.031 mu_mean=-9.470 sigma_mean=2.967 sigma_p90=5.822 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37157, 'sRE4': 37152, 'sRE6': 37146, 'sRE7': 37153}, 'user': {7: 21586, 4: 20608, 8: 21489, 1: 21082, 2: 20865, 5: 21511, 6: 21467}, 'intf': {'wo': 70561, 'w': 78047}}
+[VAL] loss=22.146636  MAE=8.314  RMSE=14.022  abs_err(p50/p90/p99)=5.207/17.491/58.808
+[VAL][mu] mean=-9.502, std=34.570, min=-92.597, max=88.193, p50=-10.497, p90=35.656, p99=77.021
+[VAL][sigma] mean=2.964, std=1.908, min=0.517, max=11.562, p50=2.528, p90=5.824, p99=8.000
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 92] train_loss=1.399636 val_loss=22.146636 val_MAE=8.314 val_RMSE=14.022 mu_mean=-9.502 sigma_mean=2.964 sigma_p90=5.824 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37156, 'sRE4': 37157, 'sRE5': 37144, 'sRE7': 37151}, 'user': {5: 21509, 7: 21586, 6: 21464, 2: 20870, 1: 21080, 4: 20615, 8: 21484}, 'intf': {'wo': 70560, 'w': 78048}}
+[VAL] loss=22.933433  MAE=8.346  RMSE=14.058  abs_err(p50/p90/p99)=5.235/17.554/58.750
+[VAL][mu] mean=-9.588, std=34.769, min=-92.554, max=88.911, p50=-10.574, p90=35.498, p99=77.798
+[VAL][sigma] mean=2.956, std=1.932, min=0.504, max=11.704, p50=2.493, p90=5.847, p99=8.079
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 93] train_loss=1.392935 val_loss=22.933433 val_MAE=8.346 val_RMSE=14.058 mu_mean=-9.588 sigma_mean=2.956 sigma_p90=5.847 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37155, 'sRE7': 37151, 'sRE6': 37155, 'sRE4': 37147}, 'user': {1: 21078, 5: 21504, 4: 20620, 6: 21468, 2: 20871, 7: 21584, 8: 21483}, 'intf': {'wo': 70558, 'w': 78050}}
+[VAL] loss=22.978803  MAE=8.327  RMSE=14.033  abs_err(p50/p90/p99)=5.218/17.548/59.091
+[VAL][mu] mean=-9.670, std=34.623, min=-92.314, max=88.220, p50=-10.688, p90=35.352, p99=77.020
+[VAL][sigma] mean=2.943, std=1.915, min=0.504, max=11.446, p50=2.487, p90=5.789, p99=8.076
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 94] train_loss=1.389474 val_loss=22.978803 val_MAE=8.327 val_RMSE=14.033 mu_mean=-9.670 sigma_mean=2.943 sigma_p90=5.789 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37150, 'sRE6': 37155, 'sRE5': 37154, 'sRE7': 37149}, 'user': {8: 21490, 7: 21586, 4: 20613, 6: 21465, 5: 21517, 1: 21066, 2: 20871}, 'intf': {'w': 78051, 'wo': 70557}}
+[VAL] loss=23.269584  MAE=8.336  RMSE=14.045  abs_err(p50/p90/p99)=5.212/17.588/58.836
+[VAL][mu] mean=-9.580, std=34.665, min=-92.693, max=88.706, p50=-10.550, p90=35.562, p99=77.501
+[VAL][sigma] mean=2.956, std=1.938, min=0.498, max=11.346, p50=2.491, p90=5.856, p99=8.131
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 95] train_loss=1.394408 val_loss=23.269584 val_MAE=8.336 val_RMSE=14.045 mu_mean=-9.580 sigma_mean=2.956 sigma_p90=5.856 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37144, 'sRE5': 37151, 'sRE7': 37161, 'sRE6': 37152}, 'user': {8: 21487, 5: 21516, 6: 21465, 4: 20611, 2: 20866, 1: 21080, 7: 21583}, 'intf': {'w': 78051, 'wo': 70557}}
+[VAL] loss=23.531102  MAE=8.312  RMSE=14.020  abs_err(p50/p90/p99)=5.192/17.508/58.759
+[VAL][mu] mean=-9.564, std=34.408, min=-92.019, max=88.092, p50=-10.553, p90=35.295, p99=76.909
+[VAL][sigma] mean=2.930, std=1.916, min=0.502, max=11.450, p50=2.461, p90=5.782, p99=8.068
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 96] train_loss=1.392006 val_loss=23.531102 val_MAE=8.312 val_RMSE=14.020 mu_mean=-9.564 sigma_mean=2.930 sigma_p90=5.782 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE7': 37150, 'sRE4': 37148, 'sRE6': 37150, 'sRE5': 37160}, 'user': {5: 21516, 6: 21468, 2: 20870, 4: 20614, 1: 21078, 7: 21581, 8: 21481}, 'intf': {'wo': 70566, 'w': 78042}}
+[VAL] loss=23.771012  MAE=8.321  RMSE=14.032  abs_err(p50/p90/p99)=5.189/17.552/58.769
+[VAL][mu] mean=-9.470, std=34.617, min=-92.118, max=88.841, p50=-10.545, p90=35.649, p99=77.357
+[VAL][sigma] mean=2.939, std=1.937, min=0.495, max=11.430, p50=2.465, p90=5.826, p99=8.146
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 97] train_loss=1.389853 val_loss=23.771012 val_MAE=8.321 val_RMSE=14.032 mu_mean=-9.470 sigma_mean=2.939 sigma_p90=5.826 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37150, 'sRE7': 37157, 'sRE6': 37146, 'sRE4': 37155}, 'user': {7: 21575, 1: 21076, 5: 21519, 2: 20867, 8: 21488, 6: 21464, 4: 20619}, 'intf': {'w': 78046, 'wo': 70562}}
+[VAL] loss=23.663796  MAE=8.322  RMSE=14.035  abs_err(p50/p90/p99)=5.212/17.530/58.754
+[VAL][mu] mean=-9.446, std=34.567, min=-91.707, max=88.441, p50=-10.535, p90=35.554, p99=77.437
+[VAL][sigma] mean=2.941, std=1.929, min=0.496, max=11.715, p50=2.482, p90=5.813, p99=8.102
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 98] train_loss=1.385258 val_loss=23.663796 val_MAE=8.322 val_RMSE=14.035 mu_mean=-9.446 sigma_mean=2.941 sigma_p90=5.813 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE4': 37148, 'sRE6': 37151, 'sRE5': 37157, 'sRE7': 37152}, 'user': {7: 21574, 6: 21465, 8: 21483, 1: 21080, 2: 20878, 4: 20611, 5: 21517}, 'intf': {'w': 78045, 'wo': 70563}}
+[VAL] loss=23.352185  MAE=8.343  RMSE=14.055  abs_err(p50/p90/p99)=5.233/17.573/58.895
+[VAL][mu] mean=-9.585, std=34.741, min=-92.758, max=88.577, p50=-10.558, p90=35.754, p99=77.284
+[VAL][sigma] mean=2.963, std=1.941, min=0.491, max=11.926, p50=2.520, p90=5.855, p99=8.120
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 99] train_loss=1.390643 val_loss=23.352185 val_MAE=8.343 val_RMSE=14.055 mu_mean=-9.585 sigma_mean=2.963 sigma_p90=5.855 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE6': 37153, 'sRE7': 37154, 'sRE4': 37154, 'sRE5': 37147}, 'user': {8: 21481, 5: 21516, 4: 20615, 2: 20870, 6: 21467, 7: 21584, 1: 21075}, 'intf': {'w': 78042, 'wo': 70566}}
+[VAL] loss=24.353607  MAE=8.329  RMSE=14.042  abs_err(p50/p90/p99)=5.225/17.560/59.121
+[VAL][mu] mean=-9.658, std=34.702, min=-92.789, max=88.633, p50=-10.650, p90=35.561, p99=77.113
+[VAL][sigma] mean=2.934, std=1.945, min=0.481, max=11.704, p50=2.447, p90=5.848, p99=8.094
+[VAL][baseline 2D-FFT] n_valid=21536/21536  MAE=17.813  RMSE=30.676  abs_err(p50/p90/p99)=9.494/43.291/136.071
+[VAL meta] {'room': {'Lounge': 21536}, 'ap': {'sRE4': 5384, 'sRE5': 5384, 'sRE6': 5384, 'sRE7': 5384}, 'user': {3: 21536}, 'intf': {'w': 7192, 'wo': 14344}}
+[epoch 100] train_loss=1.384635 val_loss=24.353607 val_MAE=8.329 val_RMSE=14.042 mu_mean=-9.658 sigma_mean=2.934 sigma_p90=5.848 baseline_MAE=17.813
+[TRAIN meta] {'room': {'Lounge': 148608}, 'ap': {'sRE5': 37150, 'sRE4': 37152, 'sRE7': 37152, 'sRE6': 37154}, 'user': {1: 21075, 6: 21463, 7: 21585, 4: 20615, 5: 21515, 2: 20870, 8: 21485}, 'intf': {'wo': 70562, 'w': 78046}}
+=== Training done ===

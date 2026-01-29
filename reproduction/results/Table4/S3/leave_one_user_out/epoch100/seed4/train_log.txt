@@ -1,0 +1,4 @@
+=== Start training seed=4 ===
+Train size: 70784, Val size: 21096
+Log file: /home/haotian/RLoc/reproduction/results/Table4/S3/leave_one_user_out/epoch100/seed4/train_log.txt
+Best ckpt: /home/haotian/RLoc/reproduction/results/Table4/S3/leave_one_user_out/epoch100/seed4/rloc_seed4.pt
